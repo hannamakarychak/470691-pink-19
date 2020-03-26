@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Анна Макаричак](https://up.htmlacademy.ru/adaptive/19/user/470691).
-* Наставник: `Неизвестно`.
+- Студент: [Анна Макаричак](https://up.htmlacademy.ru/adaptive/19/user/470691).
+- Наставник: [Михал Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
