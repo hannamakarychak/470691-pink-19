@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <a href="index.html" class="header__link">
+        <svg class="header__logo logo"></svg>
+      </a>
+      <button class="header__burger-button">
+        <!-- svg burger icon or bckground-->
+      </button>
+    </div>
+    <nav class="header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Фотографии</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Конкурс</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <h1 class="hero__heading">Фотографии пользователей</h1>
+    </section>
+    <section class="customer-photo">
+      <p class="customer-photo__description">
+        Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?
+      </p>
+      <!-- will multiply photo-card once css is being written -->
+      <div class="customer-photo__item photo-card">
+        <span class="photo-card__sticker"></span>
+        <img src="#" alt="Фотография пользователя Анна" class="photo-card__image">
+        <span class="photo-card__name">Анна</span>
+        <span class="photo-card__date">(5 минут назад)</span>
+        <p class="photo-card__description">
+          Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
+          вопросы!
+        </p>
+        <div class="photo-card__likes like">
+          <svg class="like__icon"></svg>
+          <span class="like__text">Нравится: 215</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__logo-wrapper">
+      <svg class="footer__logo logo logo--reverse">
+      </svg>
+    </div>
+    <ul class="footer__socials socials-list">
+      <li class="socials-list__item">
+        <a href="#" class="socials-list__link" aria-label="twitter">
+          <svg class="socials-list__icon"></svg>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a href="#" class="social-list__link" aria-label="facebook">
+          <svg class="socials-list__icon"></svg>
+        </a>
+      </li>
+      <li class="socials-list__item">
+        <a href="#" class="social-list__link" aria-label="youtube">
+          <svg class="socials-list__icon"></svg>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__copy">
+      <span class="footer__developer-info">Разработано</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copy-link"
+        aria-label="HTML Academy Профессиональный HTML и CSS, уровень 2">
+        <svg class="footer__copy-icon"></svg>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
