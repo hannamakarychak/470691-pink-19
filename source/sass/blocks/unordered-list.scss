@@ -1,0 +1,13 @@
+.unordered-list {
+  list-style: none;
+  margin: 0;
+}
+
+.unordered-list__heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.unordered-list__description {
+  color: $dark-blue;
+}

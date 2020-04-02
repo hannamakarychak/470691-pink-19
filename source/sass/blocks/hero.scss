@@ -1,0 +1,20 @@
+.hero {
+  min-height: 400px;
+  color: $white;
+
+  &--index-background {
+    background-image: url("../../img/iphone-hand-mobile@1x.png"),
+      url("../../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 260px 280px, cover;
+    background-position: 5px 119px, center;
+  }
+}
+
+.hero__moto {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+  padding: 30px;
+  margin: 0;
+}
