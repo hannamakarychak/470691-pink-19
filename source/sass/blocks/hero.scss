@@ -1,20 +1,30 @@
 .hero {
-  min-height: 400px;
   color: $white;
+  background-position-y: -65px;
 
   &--index-background {
+    min-height: 400px;
     background-image: url("../../img/iphone-hand-mobile@1x.png"),
       url("../../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 260px 280px, cover;
     background-position: 5px 119px, center;
   }
+
+  &--photo-background {
+    height: 164px;
+    background-image: url("../../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
-.hero__moto {
-  font-size: 24px;
-  text-align: center;
+.hero__heading {
+  max-width: 221px;
   font-weight: 300;
-  padding: 30px;
-  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 30px;
+  margin: 0 auto;
 }

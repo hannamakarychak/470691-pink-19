@@ -1,6 +1,6 @@
-@import "mixins.scss";
 @import "variables.scss";
 @import "base.scss";
+@import "mixins.scss";
 @import "blocks/header.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/container.scss";
@@ -11,3 +11,8 @@
 @import "blocks/benefits.scss";
 @import "blocks/unordered-list.scss";
 @import "blocks/review.scss";
+@import "blocks/customer-photo.scss";
+@import "blocks/photo-card.scss";
+@import "blocks/like.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials-list.scss";
