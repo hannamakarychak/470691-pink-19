@@ -1,0 +1,24 @@
+.benefits {
+  text-align: center;
+  font-weight: 300;
+  color: $dark-blue;
+}
+
+.benefits__moto-wrapper {
+  background-color: $white;
+  padding: 46px 58px;
+}
+
+.benefits__moto {
+  font-size: 24px;
+  margin: 0;
+}
+
+.benefits__moto:not(:last-child) {
+  padding-bottom: 40px;
+}
+
+.benefits__list {
+  padding: 45px 25px;
+  background-color: $light-blue;
+}

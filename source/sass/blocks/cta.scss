@@ -1,0 +1,23 @@
+.cta {
+  background-color: $dark-blue;
+  color: $white;
+  text-align: center;
+}
+
+.cta__list {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cta__link {
+  padding: 15px;
+}
+
+.cta__text {
+  margin: 0;
+  padding: 0 45px;
+}

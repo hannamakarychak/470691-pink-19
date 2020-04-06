@@ -1,0 +1,23 @@
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photo-card__description {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.photo-card__name {
+  font-weight: bold;
+}
+
+.photo-card__date {
+  text-transform: uppercase;
+}
+
+.photo-card__info-wrapper {
+  background-color: $light-blue;
+  padding: 25px 15px;
+}
