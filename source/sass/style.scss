@@ -1,6 +1,6 @@
-@import "variables.scss";
-@import "base.scss";
-@import "mixins.scss";
+@import "utils/variables.scss.scss";
+@import "utils/base.scss.scss";
+@import "utils/mixins.scss.scss";
 @import "blocks/header.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/container.scss";
