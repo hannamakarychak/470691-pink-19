@@ -2,8 +2,20 @@
   margin: 0 auto;
   padding: 0 18px;
 
-  &--mobile {
-    max-width: 280px;
-    margin: 0 20px;
+  &--desktop-only {
+    padding: 0;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 0 20px;
+
+    &--desktop-only {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 20px;
+    max-width: 968px;
   }
 }

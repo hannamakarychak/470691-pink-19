@@ -6,7 +6,7 @@
 
 .benefits__moto-wrapper {
   background-color: $white;
-  padding: 46px 58px;
+  padding: 46px 58px 0 46px;
 }
 
 .benefits__moto {
@@ -21,4 +21,28 @@
 .benefits__list {
   padding: 45px 25px;
   background-color: $light-blue;
+}
+
+.benefits__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits__image {
+  width: 157px;
+  height: 320px;
+  background-image: url("../../img/iphone-screen-mobile@1x.png");
+}
+
+@media (min-width: $tablet) {
+  .benefits__list-wrapper {
+    flex-direction: row;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+  }
+
+  .benefits__list {
+    flex-basis: 293px;
+  }
 }

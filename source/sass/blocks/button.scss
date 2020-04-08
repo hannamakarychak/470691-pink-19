@@ -11,6 +11,8 @@
   cursor: pointer;
 
   &--primary {
-    // TODO
+    padding: 17px 54px;
+    border: solid 3px $white;
+    border-radius: 40px;
   }
 }
