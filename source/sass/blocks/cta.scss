@@ -2,6 +2,7 @@
   background-color: $dark-blue;
   color: $white;
   text-align: center;
+  padding: 20px;
 }
 
 .cta__list {
@@ -9,7 +10,7 @@
   justify-content: center;
   align-items: baseline;
   list-style: none;
-  margin: 0;
+  margin: 0 0 28px 0;
   padding: 0;
 }
 
@@ -18,12 +19,52 @@
 }
 
 .cta__text {
-  margin: 0;
-  padding: 0 45px;
+  margin: 0 auto 153px;
+  max-width: 300px;
+}
+
+.cta__button {
+  width: 100%;
+  max-width: 300px;
+  margin: 30px auto;
 }
 
 @media (min-width: $tablet) {
   .cta {
+    padding: 0;
     background-color: transparent;
+  }
+
+  .cta__button {
+    margin: 0 auto 45px auto;
+  }
+
+  .cta__text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
+    margin: 0 0 110px 0;
+  }
+
+  .cta__list {
+    margin: 0 0 41px 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .cta {
+    background-color: transparent;
+  }
+
+  .cta__button {
+    margin: 0 auto 66px auto;
+  }
+
+  .cta__list {
+    margin: 0 0 60px 0;
+  }
+
+  .cta__text {
+    margin: 0 0 125px 0;
   }
 }

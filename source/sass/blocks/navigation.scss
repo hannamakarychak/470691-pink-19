@@ -27,6 +27,18 @@
   padding: 20px;
 }
 
+.navigation__link--current {
+  border-bottom: 2px solid $white;
+}
+
+.navigation__item:hover .navigation__link {
+  color: $pink;
+}
+
+.navigation__item:active .navigation__link {
+  color: $white-30;
+}
+
 @media (min-width: $desktop) {
   .navigation__list {
     display: flex;
@@ -53,8 +65,8 @@
     padding: 7px 0;
     border-bottom: 2px solid transparent;
 
-    &:active {
-      border-bottom-color: $white;
-    }
+    // &:active {
+    //   border-bottom-color: $white;
+    // }
   }
 }
