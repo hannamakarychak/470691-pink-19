@@ -1,8 +1,10 @@
 .review {
   text-align: center;
+  padding-bottom: 11px;
 }
 
 .review__heading {
+  margin: 49px 0 23px 0;
   font-size: 18px;
   font-weight: bold;
 }
@@ -11,4 +13,45 @@
   line-height: 30px;
   color: $dark-blue;
   padding: 0 22px;
+  margin: 0 0 39px 0;
+}
+
+.review__buttons-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.review__button {
+  width: 12px;
+  height: 12px;
+  background-color: $dark-blue-30;
+  border-radius: 50%;
+  margin: 0 7px;
+  padding: 0;
+  border: solid 3px $white;
+
+  &:hover {
+    background-color: $dark-blue-60;
+  }
+
+  &:focus {
+    border-color: $dark-blue;
+    background-color: $white;
+  }
+
+  &:active {
+    background-color: $white;
+  }
+
+  &--focus {
+    border-color: $dark-blue;
+    background-color: $white;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .review__button {
+    display: none;
+  }
 }
