@@ -1,6 +1,21 @@
 .socials-list {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   @include list-reset;
 }
+
+.socials-list__item {
+  width: 46px;
+  height: 46px;
+  padding: 16px;
+  margin: 8px;
+}
+
+.socials-list__icon {
+  fill: $pink;
+}
+
+// @media (min-width: $tablet) {
+// }

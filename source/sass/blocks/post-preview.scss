@@ -1,0 +1,61 @@
+.post-preview {
+  display: none;
+  padding: 59px 0 106px 0;
+}
+
+.post-preview__icon {
+  fill: $light-grey;
+}
+
+@media (min-width: $tablet) {
+  .post-preview {
+    display: flex;
+  }
+
+  .post-preview__icon {
+    width: 238px;
+    height: 276px;
+  }
+
+  .post-preview__heading {
+    max-width: 200px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 43px 0 20px 0;
+  }
+
+  .post-preview__text {
+    flex-basis: 47%;
+    text-align: left;
+    margin-left: 70px;
+    line-height: 24px;
+  }
+
+  .post-preview__link {
+    display: block;
+    color: $pink;
+    text-decoration: underline;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .post-preview__icon {
+    width: 298px;
+    height: 345px;
+  }
+
+  .post-preview__text {
+    margin-left: 67px;
+    line-height: 30px;
+  }
+
+  .post-preview__heading {
+    max-width: 100%;
+    margin: 107px 0 20px 0;
+  }
+
+  .post-preview__description {
+    font-size: 18px;
+  }
+}
