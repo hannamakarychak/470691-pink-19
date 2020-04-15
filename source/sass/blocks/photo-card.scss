@@ -21,3 +21,28 @@
   background-color: $light-blue;
   padding: 25px 15px;
 }
+
+@media (min-width: $tablet) {
+  .photo-card__row {
+    display: flex;
+  }
+
+  .photo-card__info-wrapper {
+    padding: 25px 15px 50px 15px;
+
+    &--full-width {
+      padding: 0 47px;
+      margin: 31px auto 78px auto;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .photo-card__info-wrapper {
+    padding: 30px 15px 80px 15px;
+
+    &--full-width {
+      padding: 0 47px;
+    }
+  }
+}
