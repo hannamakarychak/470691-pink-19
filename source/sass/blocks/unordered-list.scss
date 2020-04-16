@@ -1,13 +1,51 @@
 .unordered-list {
   list-style: none;
+  line-height: 24px;
+
+  padding: 0;
   margin: 0;
+}
+
+.unordered-list__item {
+  margin-bottom: 38px;
 }
 
 .unordered-list__heading {
   font-size: 18px;
   font-weight: bold;
+  margin: 0 0 15px 0;
 }
 
 .unordered-list__description {
   color: $dark-blue;
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .unordered-list__item {
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .unordered-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .unordered-list__heading {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 51px 0 32px 0;
+    max-width: 236px;
+  }
+
+  .unordered-list__description {
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 236px;
+  }
 }

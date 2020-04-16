@@ -2,8 +2,24 @@
   margin: 0 auto;
   padding: 0 18px;
 
-  &--mobile {
-    max-width: 280px;
-    margin: 0 20px;
+  &--desktop-only {
+    padding: 0;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 0 20px;
+    max-width: 960px;
+
+    &--desktop-only {
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--desktop-only {
+      max-width: 960px;
+      padding: 0 20px 0 0;
+    }
   }
 }

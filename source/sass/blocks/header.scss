@@ -1,12 +1,124 @@
 .header {
   color: $white;
-  background-color: $dark-blue;
+  margin-bottom: -$header-height-mobile;
+  position: relative;
+  z-index: 1;
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 21px 20px;
+  padding: 20px;
+  background-color: $dark-blue;
   box-shadow: 0 1px 0 0 $black;
+  margin-bottom: 1px;
+}
+
+.header--menu-closed .header__burger-icon {
+  display: block;
+  width: 50px;
+  height: 24px;
+}
+
+.header__burger-button {
+  padding: 0;
+
+  &:hover .header__burger-icon {
+    color: $pink;
+  }
+
+  &:active .header__burger-icon {
+    color: $white-30;
+  }
+
+  &:hover .header__cross-icon {
+    color: $pink;
+  }
+
+  &:active .header__cross-icon {
+    color: $white-30;
+  }
+}
+// .header__cross-icon {
+//   display: block;
+//   width: 24px;
+//   height: 24px;
+// }
+
+.header--menu-closed .header__top {
+  background-color: rgba($black, 0.3);
+  box-shadow: 0 1px 0 0 $black;
+}
+
+.header--menu-closed .header__navigation {
+  display: none;
+}
+
+.header--menu-closed .header__cross-icon {
+  display: none;
+}
+
+.header--menu-opened .header__cross-icon {
+  display: block;
+}
+
+.header--menu-opened .header__burger-icon {
+  display: none;
+}
+
+.header--menu-nojs .header__burger-icon {
+  display: none;
+}
+
+.header--menu-nojs .header__cross-icon {
+  display: block;
+}
+
+.header--menu-nojs .header__navigation {
+  display: block;
+}
+
+.header--menu-nojs .header__top {
+  background-color: $dark-blue;
+}
+
+@media (min-width: $tablet) {
+  .header {
+    margin-bottom: -$header-height-tablet;
+  }
+
+  .header__top {
+    min-height: 109px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header {
+    background-color: rgba($black, 0.3);
+  }
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header .header__top {
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+
+  .header__burger-button {
+    display: none;
+  }
+
+  .header__cross-icon {
+    display: none;
+  }
+
+  .header .header__navigation {
+    display: block;
+  }
 }

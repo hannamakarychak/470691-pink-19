@@ -5,6 +5,53 @@
 .customer-photo__description {
   line-height: 30px;
   text-align: center;
-  padding: 55px 40px;
+  padding: 50px 20px 68px 20px;
   margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .customer-photo__description {
+    font-size: 18px;
+    padding: 79px 80px;
+  }
+
+  .customer-photo__full-width {
+    width: 100%;
+  }
+
+  .customer-photo__half-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .customer-photo__item {
+    &--half-width {
+      flex-basis: 48%;
+
+      &:not(:nth-child(2n)) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .customer-photo__description {
+    padding: 18px 0;
+  }
+
+  .customer-photo__item {
+    &--half-width {
+      flex-basis: 31.7%;
+
+      &:nth-child(2n) {
+        margin-right: 20px;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
 }

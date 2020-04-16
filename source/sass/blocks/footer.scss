@@ -1,10 +1,22 @@
 .footer {
   text-align: center;
   padding: 40px 17px;
+
+  &--index {
+    display: none;
+  }
 }
 
 .footer__copy {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: $tablet) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 20px 43px 20px;
+  }
 }

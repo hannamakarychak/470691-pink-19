@@ -1,30 +1,99 @@
 .hero {
   color: $white;
-  background-position-y: -65px;
+}
 
-  &--index-background {
-    min-height: 400px;
+.hero__container {
+  margin: 0 auto;
+}
+
+.hero__image {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 101px 18px 36px;
+  min-height: 237px;
+
+  &--index {
+    min-height: 462px;
     background-image: url("../../img/iphone-hand-mobile@1x.png"),
       url("../../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 260px 280px, cover;
-    background-position: 5px 119px, center;
-  }
-
-  &--photo-background {
-    height: 164px;
-    background-image: url("../../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 286px, cover;
+    background-position: 0 100%, 50% 0;
+    padding-top: 95px;
   }
 }
 
 .hero__heading {
-  max-width: 221px;
   font-weight: 300;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  padding-top: 30px;
-  margin: 0 auto;
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .hero {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+
+    &--index {
+      background-image: url("../../img/bg-back-desktop@1x.jpg");
+    }
+  }
+
+  .hero__container {
+    padding-top: $header-height-tablet;
+    max-width: 980px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 440px;
+
+    &--index {
+      display: flex;
+      background-image: url("../../img/iphone-hand-desktop@1x.png");
+      background-size: auto 545px;
+      background-position: 50% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .hero__content {
+    flex: 0 1 300px;
+  }
+
+  .hero__image {
+    background: none;
+    padding: 81px 0;
+    min-height: unset;
+
+    &--index {
+      padding: 103px 0 39px;
+    }
+  }
+
+  .hero__heading {
+    font-size: 50px;
+    line-height: 64px;
+
+    &--index {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .hero__container {
+    min-height: 394px;
+  }
+
+  .hero__image {
+    padding: 74px 0;
+
+    &--index {
+      padding: 132px 0 61px;
+    }
+  }
 }
