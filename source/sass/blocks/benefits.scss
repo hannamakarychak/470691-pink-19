@@ -5,9 +5,13 @@
   padding-top: 46px;
 }
 
+.benefits__list {
+  padding-top: 95px;
+}
+
 .benefits__moto-wrapper {
   background-color: $white;
-  margin-bottom: 119px;
+  margin-bottom: 29px;
 }
 
 .benefits__moto {
@@ -20,8 +24,9 @@
   margin-bottom: 40px;
 }
 
-.benefits__list {
-  background-color: $light-blue;
+.benefits__list-wrapper {
+  background-color: pink;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 6%);
 }
 
 .benefits__image {
@@ -50,7 +55,7 @@
     margin-bottom: 0;
   }
 
-  .benefits__list-wrapper {
+  .benefits__flex-container {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -60,11 +65,11 @@
   .benefits__list {
     flex: 1 0 293px;
     text-align: left;
-    padding: 0;
     margin: 30px 0 0 41px;
   }
 
   .benefits__image {
+    align-self: flex-end;
     width: 268px;
     height: auto;
     margin: 0;
@@ -75,7 +80,7 @@
   .benefits__list {
     display: flex;
     flex-basis: 100%;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .benefits__image {

@@ -1,6 +1,6 @@
 .post-preview {
   display: none;
-  padding: 59px 0 106px 0;
+  padding: 59px 20px 106px 20px;
 }
 
 .post-preview__icon {
@@ -12,9 +12,23 @@
     display: flex;
   }
 
-  .post-preview__icon {
-    width: 238px;
-    height: 276px;
+  .post-preview__clock {
+    padding: 55px 18px 19px 18px;
+    background-image: url("../../img/icon-timer.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .post-preview__clock-text {
+    font-size: 96px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 65px;
+    width: 202px;
+    height: 202px;
+    border: 15px solid $pink;
+    color: $pink;
+    border-radius: 50%;
   }
 
   .post-preview__heading {
