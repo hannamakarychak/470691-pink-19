@@ -1,0 +1,19 @@
+.form-section {
+  color: $dark-blue;
+}
+
+.form-section__text {
+  margin: 48px auto;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    max-width: 487px;
+    font-size: 18px;
+    margin: 90px auto 70px auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 752px;
+  }
+}
