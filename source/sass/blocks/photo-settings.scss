@@ -1,0 +1,136 @@
+.photo-settings__description {
+  margin: 50px auto 68px auto;
+}
+
+.photo-settings__bg-color {
+  padding: 20px 0 40px 0;
+  background-color: pink;
+}
+
+.photo-settings__flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo-settings__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 42px;
+}
+
+.photo-settings__range {
+  margin: 0 auto;
+  padding: 35px 0;
+  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+}
+
+.photo-settings__icon {
+  opacity: 0.3;
+  margin: 0 17px;
+
+  &--active {
+    fill: $pink;
+    opacity: 1;
+  }
+}
+
+.photo-settings__button-wrapper {
+  padding-top: 38px;
+}
+
+.photo-settings__button {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .photo-settings__description {
+    margin: 72px auto;
+  }
+
+  .photo-settings__flex-container {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .photo-settings__wrapper {
+    flex-basis: 40%;
+    flex-direction: column;
+    padding: 0 33px 0 48px;
+  }
+
+  .photo-settings__row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  .photo-settings__icon {
+    width: 22px;
+    height: 22px;
+    margin: 0 30px 0 0;
+  }
+
+  .photo-settings__range {
+    border: none;
+  }
+
+  .photo-settings__button {
+    min-width: 260px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .photo-settings__bg-color {
+    padding: 57px 0;
+  }
+
+  .photo-settings__flex-container {
+    justify-content: center;
+  }
+
+  .photo-settings__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photo-settings__wrapper {
+    padding: 0 0 0 90px;
+  }
+
+  .photo-settings__row {
+    padding: 12px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .photo-settings__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .photo-settings__range {
+    padding: 0;
+  }
+
+  .photo-settings__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .photo-settings__button {
+    min-width: 183px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 44px;
+    }
+  }
+}

@@ -20,6 +20,10 @@
 .photo-card__info-wrapper {
   background-color: $whitish;
   padding: 25px 15px;
+
+  &--full-width {
+    padding: 15px 35px;
+  }
 }
 
 @media (min-width: $tablet) {
