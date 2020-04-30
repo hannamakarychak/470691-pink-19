@@ -1,0 +1,44 @@
+.range {
+  &--hidden {
+    display: none;
+  }
+}
+
+.range__controls {
+  position: relative;
+}
+
+.range__bar {
+  width: 240px;
+  height: 2px;
+  background-color: $black;
+  margin: 0 auto;
+}
+
+.range__toggle {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 190px;
+  width: 15px;
+  height: 15px;
+  background-color: $white;
+  border: 2px solid $pink;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet) {
+  .range {
+    &--hidden {
+      display: block;
+    }
+
+    &--tablet-hidden {
+      display: none;
+    }
+  }
+
+  .range__bar {
+    width: 202px;
+  }
+}

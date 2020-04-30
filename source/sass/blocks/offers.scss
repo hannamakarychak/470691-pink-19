@@ -1,0 +1,172 @@
+.offers {
+  padding-top: 127px;
+  padding-bottom: 70px;
+  background-color: #cccccc;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 8%);
+}
+
+.offers__table {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: $white;
+}
+
+.offers__row {
+  background-color: $dark-blue;
+}
+
+.offers__name {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 0;
+  color: $white;
+
+  &--blank {
+    background-color: $whitish;
+  }
+
+  &:not(:nth-child(3)) {
+    display: none;
+  }
+}
+
+.offers__name-text {
+  margin: 0 20px;
+  padding: 18px 0;
+  border-left: 2px $greyish solid;
+  border-right: 2px $greyish solid;
+
+  &--hit {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "хит";
+      width: 74px;
+      height: 73px;
+      top: 4px;
+      left: 25px;
+      font-size: 15px;
+
+      text-transform: uppercase;
+      transform: translate(-18px, 0) rotate(-45deg);
+      z-index: 1;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 74px;
+      height: 73px;
+      top: 0;
+      left: 0;
+      background-image: url(../../img/bg-hit.svg);
+    }
+  }
+}
+
+.offers__package {
+  border-bottom: 2px solid $greyish;
+}
+
+.offers__cell {
+  text-align: left;
+  font-weight: 400;
+  padding: 22px;
+
+  &--left {
+    border-left: 2px solid $greyish;
+    margin-left: 20px;
+  }
+
+  &--right {
+    border-right: 2px solid $greyish;
+    margin-right: 20px;
+  }
+}
+
+.offers__filter-feature {
+  padding: 0;
+
+  &:not(:first-of-type) {
+    display: none;
+  }
+}
+
+.offers__filter-name {
+  padding: 0;
+}
+
+.offers__price {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+@media (min-width: $tablet) {
+  .offers__name {
+    display: table-cell;
+    width: 24%;
+    font-size: 16px;
+    line-height: 1.88;
+
+    &:not(:nth-child(3)) {
+      display: table-cell;
+    }
+  }
+
+  .offers__name:not(:first-child) {
+    border: 2px solid $dark-blue;
+    border-top: none;
+  }
+
+  .offers__name:nth-child(2),
+  .offers__name:nth-child(3) {
+    border-right: 2px solid $greyish;
+  }
+
+  .offers__name-text {
+    border: none;
+    margin: 0;
+    padding: 12px 0 8px 0;
+  }
+
+  .offers__filter-name {
+    border: 2px solid pink;
+  }
+
+  .offers__filter-feature {
+    border: 2px solid pink;
+
+    &:not(:first-of-type) {
+      display: table-cell;
+    }
+  }
+
+  .offers__cell {
+    text-transform: capitalize;
+    padding: 15px;
+    border: 2px solid pink;
+
+    &--left {
+      margin-left: 0;
+      border: none;
+    }
+
+    &--right {
+      margin-right: 0;
+      border: none;
+    }
+  }
+
+  .offers__price {
+    display: block;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+// @media (min-width: $desktop) {
+// }

@@ -1,23 +1,44 @@
 .container {
   margin: 0 auto;
-  padding: 0 18px;
+  padding: 0 20px;
 
-  &--desktop-only {
+  &--desktop {
     padding: 0;
   }
 
+  &--tablet {
+    padding: 0;
+  }
+
+  &--light-bg {
+    background-color: $white;
+  }
+
+  &--dark-bg {
+    background-color: $whitish;
+  }
+
   @media (min-width: $tablet) {
+    width: 100%;
     padding: 0 20px;
     max-width: 960px;
 
-    &--desktop-only {
+    &--desktop {
       padding: 0;
       max-width: 100%;
+    }
+
+    &--tablet {
+      padding: 0 20px;
+    }
+
+    &--dark-bg {
+      background-color: $white;
     }
   }
 
   @media (min-width: $desktop) {
-    &--desktop-only {
+    &--desktop {
       max-width: 960px;
       padding: 0 20px 0 0;
     }

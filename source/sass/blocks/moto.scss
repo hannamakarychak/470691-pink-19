@@ -1,0 +1,10 @@
+.moto {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
+}
