@@ -15,24 +15,13 @@
     background-color: $dark-blue-60;
   }
 
-  &:focus {
-    border-color: $dark-blue;
-    background-color: $white;
-  }
-
   &:active {
     background-color: $white;
   }
 
-  &--focus {
+  &--current {
     border-color: $dark-blue;
     background-color: $white;
     pointer-events: none;
-  }
-}
-
-@media (min-width: $desktop) {
-  .slider-navi__button {
-    display: none;
   }
 }

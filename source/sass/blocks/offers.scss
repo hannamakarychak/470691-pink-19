@@ -15,15 +15,12 @@
   background-color: $white;
 }
 
-.offers__row {
-  background-color: $dark-blue;
-}
-
 .offers__name {
   font-size: 18px;
   font-weight: 800;
   padding: 0;
   color: $white;
+  background-color: $dark-blue;
 
   &--blank {
     background-color: $whitish;
@@ -172,7 +169,8 @@
     font-size: 18px;
     line-height: 1.67;
   }
-}
 
-// @media (min-width: $desktop) {
-// }
+  .offers__buttons-wrapper {
+    display: none;
+  }
+}

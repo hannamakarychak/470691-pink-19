@@ -151,7 +151,7 @@
       <h2 class="visually-hidden">Список преимуществ сервиса</h2>
       <div class="benefits__list-wrapper">
         <div class="benefits__flex-container container">
-          <ul class="benefits__list unordered-list ">
+          <ul class="benefits__list unordered-list">
             <li class="unordered-list__item">
               <picture>
                 <source media="(min-width: 960px)"
@@ -206,13 +206,13 @@
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <div class="unordered-list__image-wrapper">
+          <div class="benefits__tablet">
             <picture>
               <source media="(min-width: 660px) and (max-width: 959px)"
                 srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img src="img/iphone-screen-mobile@1x.png"
                 srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x"
-                alt="Фотография с розовым фильтром и смайликом" class="unordered-list__image" width="157" height="320">
+                alt="Фотография с розовым фильтром и смайликом" class="benefits__tablet-image" width="157" height="320">
             </picture>
           </div>
 
@@ -246,13 +246,13 @@
         познакомился со своей будущей женой в комментариях к выложенной фотографии!»
       </p>
       <div class="review__buttons-wrapper slider-navi">
-        <button type="button" class="slider-navi__button slider-navi__button--focus"></button>
+        <button type="button" class="slider-navi__button slider-navi__button--current"></button>
         <button type="button" class="slider-navi__button"></button>
         <button type="button" class="slider-navi__button"></button>
       </div>
     </section>
     <section class="offers">
-      <div class="container--tablet">
+      <div class="container container--tablet">
         <table class="offers__table ">
           <caption class="visually-hidden">Выбор фильтра</caption>
           <tbody>
@@ -348,7 +348,7 @@
       <div class="offers__buttons-wrapper slider-navi">
         <button type="button" class="slider-navi__button slider-navi__button--whitish"></button>
         <button type="button"
-          class="slider-navi__button slider-navi__button--whitish slider-navi__button--focus"></button>
+          class="slider-navi__button slider-navi__button--whitish slider-navi__button--current"></button>
         <button type="button" class="slider-navi__button slider-navi__button--whitish"></button>
       </div>
     </section>
@@ -455,39 +455,7 @@
     </div>
   </footer>
   <script src="js/menu-script.js"></script>
-
-  <script>
-    function actualResizeHandler() {
-      const offersCells = document.querySelectorAll('.offers__name:not(.offers__name--blank)');
-      const offersCellsArray = Array.prototype.slice.call(offersCells)
-
-      const width = window.innerWidth
-
-
-      offersCellsArray.forEach(cell => cell.setAttribute('colspan', width >= 660 ? 1 : 2))
-    }
-
-    var resizeTimeout;
-
-    function resizeThrottler() {
-      // ignore resize events as long as an actualResizeHandler execution is in the queue
-      if (!resizeTimeout) {
-        resizeTimeout = setTimeout(function () {
-          resizeTimeout = null;
-          actualResizeHandler();
-
-          // The actualResizeHandler will execute at a rate of 15fps
-        }, 66);
-      }
-    }
-
-
-    (function () {
-      actualResizeHandler();
-
-      window.addEventListener("resize", resizeThrottler, false);
-    }());
-  </script>
+  <script src="js/table.js"></script>
 </body>
 
 </html>

@@ -29,6 +29,20 @@
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
 }
 
+.benefits__tablet {
+  position: relative;
+  width: 157px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.benefits__tablet-image {
+  position: absolute;
+  bottom: -40px;
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet) {
   .benefits {
     padding-top: 59px;
@@ -59,6 +73,17 @@
     text-align: left;
     margin: 30px 0 0 41px;
   }
+
+  .benefits__tablet {
+    width: 268px;
+  }
+
+  .benefits__tablet-image {
+    align-self: flex-end;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -66,5 +91,9 @@
     display: flex;
     flex-basis: 100%;
     margin: 0 auto;
+  }
+
+  .benefits__tablet-image {
+    display: none;
   }
 }

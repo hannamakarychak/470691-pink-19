@@ -20,3 +20,9 @@
   display: flex;
   justify-content: center;
 }
+
+@media (min-width: $desktop) {
+  .review__buttons-wrapper {
+    display: none;
+  }
+}
