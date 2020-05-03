@@ -9,6 +9,15 @@
   margin-bottom: 38px;
 }
 
+.unordered-list__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.unordered-list__column-image {
+  display: none;
+}
+
 .unordered-list__heading {
   font-size: 18px;
   font-weight: bold;
@@ -24,15 +33,33 @@
   .unordered-list__item {
     margin-bottom: 46px;
   }
+
+  .unordered-list__image {
+    align-self: flex-end;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop) {
   .unordered-list__item {
     display: flex;
     flex-direction: column;
+    flex: 0 0 33.33%;
     align-items: center;
     text-align: center;
     padding: 0 10px;
+  }
+
+  .unordered-list__image {
+    display: none;
+  }
+
+  .unordered-list__column-image {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .unordered-list__heading {

@@ -21,6 +21,8 @@
 
 @media (min-width: $tablet) {
   .like {
+    margin-top: auto;
+
     &--mobile {
       display: none;
     }

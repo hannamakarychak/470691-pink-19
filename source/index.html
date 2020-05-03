@@ -153,31 +153,69 @@
         <div class="benefits__flex-container container">
           <ul class="benefits__list unordered-list ">
             <li class="unordered-list__item">
-              <img src="img/iphone-screen-1-desktop@1x.png" alt="" class="benefits__column-image " width="300"
-                height="310">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                <source media="(min-width: 660px) and (max-width: 959px)"
+                  srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png"
+                  srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x"
+                  alt="Фотография с розовым фильтром и смайликом" class="unordered-list__column-image" width="157"
+                  height="320">
+              </picture>
               <h3 class="unordered-list__heading">Поднимает настроение</h3>
+              <!-- <img src="img/iphone-screen-1-desktop@1x.png"
+                srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x"
+                alt="Фотография с серым фильтром приложения" class="benefits__column-image " width="300" height="310">
+               -->
               <p class="unordered-list__description">
                 Приложение позволит вам победить осеннюю хандру и депрессию буквально в
                 несколько кликов!</p>
             </li>
             <li class="unordered-list__item">
-              <img src="img/iphone-screen-2-desktop@1x.png" alt="Фотография без фильтра приложения"
-                class="benefits__column-image " width="300" height="310">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                <source media="(min-width: 660px) and (max-width: 959px)"
+                  srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png"
+                  srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x"
+                  alt="Фотография с розовым фильтром и смайликом" class="unordered-list__column-image" width="157"
+                  height="320">
+              </picture>
+              <!-- <img src="img/iphone-screen-2-desktop@1x.png"
+                srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x"
+                alt="Фотография с розовым фильтром приложения" class="benefits__column-image " width="300" height="310"> -->
               <h3 class="unordered-list__heading"> Меняет мир вокруг</h3>
               <p class="unordered-list__description">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="unordered-list__item">
-              <img src="img/iphone-screen-3-desktop@1x.png" alt="Фотография с розовым фильтром приложения"
-                class="benefits__column-image " width="300" height="310">
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 660px) and (max-width: 959px)"
+                  srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png"
+                  srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x"
+                  alt="Фотография с розовым фильтром и смайликом" class="unordered-list__column-image" width="157"
+                  height="320">
+              </picture>
               <h3 class="unordered-list__heading">Заводит новых друзей</h3>
               <p class="unordered-list__description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-
             </li>
           </ul>
-          <img src="img/iphone-screen-3-tablet@1x.png" alt="Фотография с розовым фильтром и смайликом"
-            class="benefits__image" width="157" height="282">
+
+          <picture>
+            <source media="(min-width: 660px) and (max-width: 959px)"
+              srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+            <img src="img/iphone-screen-mobile@1x.png"
+              srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x"
+              alt="Фотография с розовым фильтром и смайликом" class="unordered-list__image" width="157" height="320">
+          </picture>
+
+
         </div>
       </div>
     </section>
@@ -419,7 +457,7 @@
       const width = window.innerWidth
 
 
-      offersCellsArray.forEach(cell => cell.setAttribute('colspan', width > 660 ? 1 : 2))
+      offersCellsArray.forEach(cell => cell.setAttribute('colspan', width >= 660 ? 1 : 2))
     }
 
     var resizeTimeout;

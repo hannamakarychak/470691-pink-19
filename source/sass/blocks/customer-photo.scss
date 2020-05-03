@@ -2,7 +2,16 @@
   color: $dark-blue;
 }
 
+.customer-photo__item {
+  margin-bottom: 20px;
+}
+
+.customer-photo__half-width {
+  padding: 0 20px;
+}
+
 .customer-photo__description {
+  max-width: 500px;
   margin: 50px auto 68px auto;
 }
 
@@ -23,11 +32,8 @@
 
   .customer-photo__item {
     &--half-width {
-      flex-basis: 48%;
-
-      &:not(:nth-child(2n)) {
-        margin-right: 20px;
-      }
+      padding: 0 10px;
+      flex-basis: 50%;
     }
   }
 }
@@ -38,16 +44,11 @@
   }
 
   .customer-photo__item {
+    margin-bottom: 50px;
+
     &--half-width {
-      flex-basis: 31.7%;
-
-      &:nth-child(2n) {
-        margin-right: 20px;
-      }
-
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
+      flex-basis: 33.3333%;
+      margin-bottom: 54px;
     }
   }
 }

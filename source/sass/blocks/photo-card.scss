@@ -1,7 +1,13 @@
 .photo-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.photo-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .photo-card__description {
@@ -15,15 +21,14 @@
 
 .photo-card__date {
   text-transform: uppercase;
+  font-weight: 300;
+  opacity: 0.5;
 }
 
 .photo-card__info-wrapper {
-  background-color: $whitish;
-  padding: 25px 15px;
-
-  &--full-width {
-    padding: 15px 35px;
-  }
+  background-color: pink;
+  padding: 25px 18px;
+  margin: 0;
 }
 
 @media (min-width: $tablet) {
@@ -32,21 +37,25 @@
   }
 
   .photo-card__info-wrapper {
-    padding: 25px 15px 50px 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    min-height: 175px;
+    padding: 20px 10px 22px 27px;
+  }
 
-    &--full-width {
-      padding: 0 47px;
-      margin: 31px auto 78px auto;
+  .photo-card__image {
+    &--main {
+      width: 100%;
+      height: auto;
     }
   }
 }
 
 @media (min-width: $desktop) {
   .photo-card__info-wrapper {
-    padding: 30px 15px 80px 15px;
-
     &--full-width {
-      padding: 0 47px;
+      min-height: 96px;
     }
   }
 }
