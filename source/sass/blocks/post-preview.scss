@@ -10,6 +10,7 @@
 @media (min-width: $tablet) {
   .post-preview {
     display: flex;
+    background-color: $white;
   }
 
   .post-preview__clock {
@@ -35,7 +36,7 @@
     max-width: 200px;
     font-size: 30px;
     line-height: 40px;
-    margin: 43px 0 20px 0;
+    margin: 31px 0 20px 0;
   }
 
   .post-preview__text {
@@ -54,6 +55,10 @@
 }
 
 @media (min-width: $desktop) {
+  .post-preview {
+    background-color: $whitish;
+  }
+
   .post-preview__icon {
     width: 298px;
     height: 345px;
@@ -66,7 +71,7 @@
 
   .post-preview__heading {
     max-width: 100%;
-    margin: 107px 0 20px 0;
+    margin: 55px 0 20px 0;
   }
 
   .post-preview__description {

@@ -25,8 +25,8 @@
 }
 
 .benefits__list-wrapper {
-  background-color: pink;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 6%);
+  background-color: $whitish;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
 }
 
 @media (min-width: $tablet) {

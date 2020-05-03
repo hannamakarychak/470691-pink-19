@@ -1,8 +1,8 @@
 .offers {
-  padding-top: 127px;
-  padding-bottom: 70px;
-  background-color: #cccccc;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 8%);
+  padding-top: 95px;
+  padding-bottom: 45px;
+  background-color: $whitish;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%);
 }
 
 .offers__table {
@@ -10,6 +10,7 @@
   text-transform: uppercase;
   line-height: 30px;
   width: 100%;
+  margin-bottom: 43px;
   border-collapse: collapse;
   background-color: $white;
 }
@@ -103,6 +104,11 @@
 .offers__price {
   font-size: 24px;
   font-weight: 300;
+}
+
+.offers__buttons-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: $tablet) {
