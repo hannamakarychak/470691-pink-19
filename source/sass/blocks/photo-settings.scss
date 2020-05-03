@@ -1,5 +1,5 @@
 .photo-settings__description {
-  margin: 50px auto 68px auto;
+  margin: 45px auto 45px auto;
 }
 
 .photo-settings__bg-color {
@@ -48,8 +48,12 @@
 }
 
 @media (min-width: $tablet) {
+  .photo-settings__bg-color {
+    padding: 57px 0 54px 0;
+  }
+
   .photo-settings__description {
-    margin: 72px auto;
+    margin: 50px auto 70px auto;
   }
 
   .photo-settings__flex-container {
@@ -100,6 +104,10 @@
 
   .photo-settings__wrapper {
     padding: 0 0 0 90px;
+  }
+
+  .photo-settings__description {
+    margin: 10px auto 64px auto;
   }
 
   .photo-settings__row {
