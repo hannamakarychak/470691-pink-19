@@ -7,9 +7,22 @@
 
 .unordered-list__item {
   margin-bottom: 38px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.unordered-list__image-wrapper {
+  position: relative;
+  width: 157px;
+  height: 320px;
+  margin: 0 auto;
 }
 
 .unordered-list__image {
+  position: absolute;
+  bottom: -40px;
   display: block;
   margin: 0 auto;
 }
