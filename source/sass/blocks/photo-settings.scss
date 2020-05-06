@@ -4,23 +4,25 @@
 
 .photo-settings__bg-color {
   padding: 20px 0 40px 0;
-  background-color: pink;
+  background-color: $whitish;
 }
 
 .photo-settings__flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
-.photo-settings__wrapper {
+.photo-settings__form {
   display: flex;
   flex-wrap: wrap;
+  // justify-content: center;
   padding-top: 42px;
 }
 
 .photo-settings__range {
-  margin: 0 auto;
   padding: 35px 0;
   border-bottom: 1px solid rgba(40, 54, 69, 0.1);
 }
@@ -57,13 +59,15 @@
   }
 
   .photo-settings__flex-container {
+    max-width: 660px;
     justify-content: flex-start;
     flex-wrap: nowrap;
   }
 
-  .photo-settings__wrapper {
-    flex-basis: 40%;
-    flex-direction: column;
+  .photo-settings__form {
+    max-width: 357px;
+    flex-basis: 50%;
+    align-items: center;
     padding: 0 33px 0 48px;
   }
 
@@ -99,10 +103,10 @@
 
   .photo-settings__image {
     width: 300px;
-    height: 400px;
+    height: auto;
   }
 
-  .photo-settings__wrapper {
+  .photo-settings__form {
     padding: 0 0 0 90px;
   }
 

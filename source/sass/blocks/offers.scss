@@ -137,11 +137,11 @@
   }
 
   .offers__filter-name {
-    border: 2px solid pink;
+    border: 2px solid $greyish;
   }
 
   .offers__filter-feature {
-    border: 2px solid pink;
+    border: 2px solid $greyish;
 
     &:not(:first-of-type) {
       display: table-cell;
@@ -151,7 +151,7 @@
   .offers__cell {
     text-transform: capitalize;
     padding: 15px;
-    border: 2px solid pink;
+    border: 2px solid $greyish;
 
     &--left {
       margin-left: 0;
