@@ -1,5 +1,5 @@
 .contact__heading {
-  margin: 50px auto 43px auto;
+  margin: 45px auto 37px auto;
 }
 
 .contact__list {
@@ -13,11 +13,95 @@
 .contact__text {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .contact__link {
   font-size: 24px;
   font-weight: 300;
   color: $pink;
+}
+
+.contact__map {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 22%;
+    left: 44%;
+    width: 36px;
+    height: 36px;
+    background-image: url("../../img/icon-map-marker.svg");
+  }
+}
+
+@media (min-width: $tablet) {
+  .contact__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contact__list-item {
+    margin-bottom: 47px;
+
+    &--address {
+      max-width: 35.33%;
+    }
+  }
+
+  .contact__heading {
+    max-width: 63%;
+    font-size: 40px;
+  }
+
+  .contact__map {
+    height: 400px;
+
+    &::after {
+      top: 40%;
+      left: 47%;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .contact__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contact__list-item {
+    max-width: 32.33%;
+
+    &--tel {
+      order: 1;
+    }
+
+    &--address {
+      order: 2;
+      margin-left: 35px;
+    }
+
+    &--mail {
+      order: 3;
+    }
+  }
+
+  .contact__heading {
+    margin: 65px auto 65px auto;
+  }
+
+  .contact__text {
+    margin-bottom: 25px;
+  }
+
+  .contact__map {
+    &::after {
+      top: 40%;
+      left: 48%;
+    }
+  }
 }
