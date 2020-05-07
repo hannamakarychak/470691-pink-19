@@ -2,6 +2,20 @@
   &--hidden {
     display: none;
   }
+
+  &--tablet-hidden {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 320px;
+      left: -49px;
+      bottom: -1px;
+      height: 1px;
+      background-color: rgba(40, 54, 69, 0.1);
+    }
+  }
 }
 
 .range__controls {
@@ -35,6 +49,10 @@
 
     &--tablet-hidden {
       display: none;
+
+      &::after {
+        display: none;
+      }
     }
   }
 

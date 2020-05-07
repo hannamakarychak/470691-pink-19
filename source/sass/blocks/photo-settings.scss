@@ -18,13 +18,12 @@
 .photo-settings__form {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
+  justify-content: center;
   padding-top: 42px;
 }
 
 .photo-settings__range {
   padding: 35px 0;
-  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
 }
 
 .photo-settings__icon {
@@ -66,6 +65,7 @@
 
   .photo-settings__form {
     max-width: 357px;
+    justify-content: flex-start;
     flex-basis: 50%;
     align-items: center;
     padding: 0 33px 0 48px;
@@ -84,6 +84,7 @@
   }
 
   .photo-settings__range {
+    margin: 0 auto;
     border: none;
   }
 
