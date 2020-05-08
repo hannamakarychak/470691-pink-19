@@ -1,5 +1,16 @@
 .logo {
-  display: block;
-  width: 75px;
-  height: 22px;
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: currentColor;
+    opacity: 0.3;
+  }
+}
+
+.logo__glasses {
+  display: none;
 }

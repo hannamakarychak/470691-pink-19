@@ -18,6 +18,16 @@
   padding: 15px;
 }
 
+.cta__icon {
+  width: 42.084px;
+  height: 47.041px;
+
+  &--microsoft {   
+    width: 43.922px;
+    height: 41.992px;
+  }
+}
+
 .cta__text {
   margin: 0 auto 153px;
   max-width: 300px;

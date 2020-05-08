@@ -74,6 +74,7 @@
   text-align: left;
   font-weight: 400;
   padding: 22px;
+  color: $dark-blue;
 
   &--left {
     border-left: 2px solid $greyish;
@@ -83,6 +84,19 @@
   &--right {
     border-right: 2px solid $greyish;
     margin-right: 20px;
+    text-align: center;
+  }
+}
+
+.offers__icon {
+  width: 31px;
+  height: 21px;
+  fill: $bright-green;
+
+  &--no {
+    width: 27px;
+    height: 21px;
+    fill: $carrot-red;
   }
 }
 
@@ -133,7 +147,7 @@
   .offers__name-text {
     border: none;
     margin: 0;
-    padding: 12px 0 8px 0;
+    padding: 8px 0;
   }
 
   .offers__filter-name {
@@ -149,13 +163,17 @@
   }
 
   .offers__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 15px;
     text-transform: capitalize;
-    padding: 15px;
     border: 2px solid $greyish;
 
     &--left {
       margin-left: 0;
       border: none;
+      justify-content: flex-start;
     }
 
     &--right {
@@ -172,5 +190,15 @@
 
   .offers__buttons-wrapper {
     display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .offers__cell {
+    min-height: 59px;
+
+    &--left {
+      font-size: 18px;
+    }
   }
 }

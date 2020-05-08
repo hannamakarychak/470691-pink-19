@@ -13,19 +13,8 @@
     <div class="header__container container container--desktop">
       <div class="header__top">
         <a href="index.html" class="header__link">
-          <svg class="header__logo logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px"
-            viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-            <g>
-              <path fill="#FFFFFF"
-                d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z" />
-              <path fill="#FFFFFF"
-                d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z" />
-              <path fill="#FFFFFF"
-                d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z" />
-              <path fill="#FFFFFF"
-                d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z" />
-            </g>
+          <svg class="header__logo logo">
+            <use xlink:href="../img/sprite.svg#logo-mobile" width="74.426px" height="22.859px"></use>
           </svg>
         </a>
         <button class="header__burger-button button">
@@ -88,13 +77,16 @@
       <div class="customer-photo__full-width">
         <div class="customer-photo__item photo-card">
           <span class="photo-card__sticker"></span>
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-            <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x"
-              alt="Фотография пользователя Анна" class="photo-card__image photo-card__image--main" width="320"
-              height="137">
-          </picture>
+          <a href="#" class="photo-card__link">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile@1x.jpg"
+                srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" alt="Фотография пользователя Анна"
+                class="photo-card__image photo-card__image--main" width="320" height="137">
+            </picture>
+          </a>
           <div class="container">
             <div class="photo-card__info-wrapper photo-card__info-wrapper--full-width ">
               <div class="photo-card__row">
@@ -139,14 +131,17 @@
       <div class="customer-photo__half-width container">
         <div class="customer-photo__item customer-photo__item--half-width photo-card">
           <span class="photo-card__sticker"></span>
-          <picture>
-            <source media="(min-width: 960px)"
-              srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-            <img src="img/photo-car-mobile@1x.jpg"
-              srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x"
-              alt="Фотография пользователя Левон" class="photo-card__image" width="280" height="180">
-          </picture>
+          <a href="#" class="photo-card__link">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img src="img/photo-car-mobile@1x.jpg"
+                srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Левон" class="photo-card__image" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo-card__info-wrapper">
             <div class="photo-card__date-row">
               <span class="photo-card__name">Левон</span>
@@ -171,15 +166,17 @@
         </div>
         <div class="customer-photo__item customer-photo__item--half-width photo-card">
           <span class="photo-card__sticker"></span>
-          <picture>
-            <source media="(min-width: 960px)"
-              srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-              srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-            <img src="img/photo-drumset-mobile@1x.jpg"
-              srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x"
-              alt="Фотография пользователя Антон" class="photo-card__image" width="280" height="180">
-          </picture>
+          <a href="#" class="photo-card__link">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img src="img/photo-drumset-mobile@1x.jpg"
+                srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Антон" class="photo-card__image" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo-card__info-wrapper">
             <div class="photo-card__date-row">
               <span class="photo-card__name">Антон</span>
@@ -204,15 +201,17 @@
         </div>
         <div class="customer-photo__item customer-photo__item--half-width photo-card">
           <span class="photo-card__sticker"></span>
-          <picture>
-            <source media="(min-width: 960px)"
-              srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-              srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-            <img src="img/photo-window-mobile@1x.jpg"
-              srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x"
-              alt="Фотография пользователя Борис" class="photo-card__image" width="280" height="180">
-          </picture>
+          <a href="#" class="photo-card__link">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img src="img/photo-window-mobile@1x.jpg"
+                srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Борис" class="photo-card__image" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo-card__info-wrapper">
             <div class="photo-card__date-row">
               <span class="photo-card__name">Борис</span>
@@ -237,15 +236,17 @@
         </div>
         <div class="customer-photo__item customer-photo__item--half-width photo-card">
           <span class="photo-card__sticker"></span>
-          <picture>
-            <source media="(min-width: 960px)"
-              srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-              srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-            <img src="img/photo-fair-mobile@1x.jpg"
-              srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x"
-              alt="Фотография пользователя Сергей" class="photo-card__image" width="280" height="180">
-          </picture>
+          <a href="#" class="photo-card__link">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img src="img/photo-fair-mobile@1x.jpg"
+                srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Сергей" class="photo-card__image" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo-card__info-wrapper">
             <div class="photo-card__date-row">
               <span class="photo-card__name">Сергей</span>
@@ -270,14 +271,17 @@
         </div>
         <div class="customer-photo__item customer-photo__item--half-width photo-card">
           <span class="photo-card__sticker"></span>
-          <picture>
-            <source media="(min-width: 960px)"
-              srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-            <img src="img/photo-pov-mobile@1x.jpg"
-              srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x"
-              alt="Фотография пользователя Максим" class="photo-card__image" width="280" height="180">
-          </picture>
+          <a href="#" class="photo-card__link">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img src="img/photo-pov-mobile@1x.jpg"
+                srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Максим" class="photo-card__image" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo-card__info-wrapper">
             <div class="photo-card__date-row">
               <span class="photo-card__name">Максим</span>
@@ -302,15 +306,17 @@
         </div>
         <div class="customer-photo__item customer-photo__item--half-width photo-card">
           <span class="photo-card__sticker"></span>
-          <picture>
-            <source media="(min-width: 960px)"
-              srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-              srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-            <img src="img/photo-wing-mobile@1x.jpg"
-              srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x"
-              alt="Фотография пользователя Надежда" class="photo-card__image" width="280" height="180">
-          </picture>
+          <a href="#" class="photo-card__link">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img src="img/photo-wing-mobile@1x.jpg"
+                srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x"
+                alt="Фотография пользователя Надежда" class="photo-card__image" width="280" height="180">
+            </picture>
+          </a>
           <div class="photo-card__info-wrapper">
             <div class="photo-card__date-row">
               <span class="photo-card__name">Надежда</span>
@@ -334,10 +340,8 @@
           </div>
         </div>
       </div>
-
     </section>
     <section class="photo-settings">
-
       <p class="photo-settings__description moto container">
         Затмите их всех! <br>
         Выкладывайте все, что накопилось в телефоне!
@@ -345,7 +349,6 @@
       <div class="photo-settings__bg-color">
         <div class="container">
           <div class="photo-settings__flex-container">
-
             <picture>
               <source media="(min-width: 960px)"
                 srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
@@ -355,8 +358,6 @@
                 srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x"
                 alt="Фотография зимнего пейзажа" width="280" height="374" class="photo-settings__image">
             </picture>
-
-
             <form method="POST" class="photo-settings__form">
               <div class="photo-settings__row">
                 <svg class="photo-settings__icon photo-settings__icon--active" version="1.0" id="Layer_1"

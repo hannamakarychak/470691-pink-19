@@ -15,6 +15,10 @@
   color: $dark-blue;
 }
 
+.footer__copy-icon {
+  fill: $pink;
+}
+
 @media (min-width: $tablet) {
   .footer {
     display: flex;
