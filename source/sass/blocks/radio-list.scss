@@ -3,37 +3,45 @@
 }
 
 .radio-list__item {
-  margin-bottom: 50px;
+  margin-bottom: 39px;
   padding-left: 68px;
 }
 
 .radio-list__label {
   position: relative;
-}
-
-.radio-list__input + .radio-list__label::before {
-  content: "";
-  position: absolute;
-
-  width: 37px;
+  display: block;
   height: 37px;
-  left: -67px;
-
-  border: 2px solid $greyish;
-  border-radius: 50%;
+  line-height: 37px;
 }
 
-.radio-list__input:checked + .radio-list__label::after {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: -56px;
+.radio-list__input {
+  @include input-interaction("+ .radio-list__label::before");
 
-  width: 15px;
-  height: 15px;
+  & + .radio-list__label::before {
+    content: "";
+    position: absolute;
 
-  background-color: $pink;
-  border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    left: -67px;
+
+    border: 2px solid $greyish;
+    border-radius: 50%;
+    background-color: $white;
+  }
+
+  &:checked + .radio-list__label::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -56px;
+
+    width: 15px;
+    height: 15px;
+
+    background-color: $pink;
+    border-radius: 50%;
+  }
 }
 
 @media (min-width: $tablet) {

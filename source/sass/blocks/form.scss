@@ -31,18 +31,16 @@
   }
 }
 
-.form__text-input {
-  width: 100%;
-}
-
 .form__text-input,
 .form__textarea {
+  @include input-interaction;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $greyish;
   margin: 0;
   padding: 14px 20px 11px 20px;
   flex-grow: 1;
+  width: 100%;
 }
 
 .form__legend {
@@ -197,6 +195,8 @@
   }
 
   .form__input-wrapper {
+    align-items: stretch;
+
     &--column {
       width: 100%;
 
@@ -208,6 +208,48 @@
         padding-left: 37px;
       }
     }
+  }
+
+  .form__input-contacts-wrapper {
+    position: relative;
+
+    &--tel {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 2px;
+        right: 2px;
+        width: 56px;
+        height: 55px;
+        background-color: $greyish;
+        background-image: url("../../img/icon-phone.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+
+    &--mail {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 2px;
+        right: 2px;
+        width: 56px;
+        height: 55px;
+        background-color: $greyish;
+        background-image: url("../../img/icon-mail.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+
+    // &:hover {
+    //   border: 2px solid red;
+    // }
   }
 
   .form__textarea {

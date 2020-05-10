@@ -10,12 +10,12 @@
 
   &--error {
     min-height: 289px;
-    transform: translateY(-145px);
+    transform: translateY(-50%);
   }
 
   &--confirm {
     min-height: 380px;
-    transform: translateY(-190px);
+    transform: translateY(-50%);
   }
 
   &--show {
@@ -63,13 +63,13 @@
     left: 50%;
 
     &--error {
-      min-height: 363px;
-      transform: translate(-50%, -181px);
+      min-height: unset;
+      transform: translate(-50%, -50%);
     }
 
     &--confirm {
-      min-height: 432px;
-      transform: translate(-50%, -216px);
+      min-height: unset;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -103,16 +103,6 @@
 @media (min-width: $desktop) {
   .modal {
     width: 81%;
-
-    &--error {
-      min-height: 377px;
-      transform: translate(-50%, -188px);
-    }
-
-    &--confirm {
-      min-height: 377px;
-      transform: translate(-50%, -188px);
-    }
   }
 
   .modal__inner {

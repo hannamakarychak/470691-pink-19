@@ -1,12 +1,12 @@
 // FORM POPUP
 var formModal = document.querySelector(".modal");
-var openModalButton = document.querySelector(".button--modal-open");
+// var openModalButton = document.querySelector(".button--modal-open");
 var closeModalButton = document.querySelector(".button--close");
 
-openModalButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  formModal.classList.add("modal--show");
-});
+// openModalButton.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   formModal.classList.add("modal--show");
+// });
 
 closeModalButton.addEventListener("click", function () {
   formModal.classList.remove("modal--show");

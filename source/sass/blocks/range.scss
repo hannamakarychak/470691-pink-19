@@ -25,20 +25,24 @@
 .range__bar {
   width: 240px;
   height: 2px;
-  background-color: $black;
+  background-color: $dark-blue;
   margin: 0 auto;
 }
 
 .range__toggle {
   position: absolute;
   content: "";
-  top: -5px;
+  top: -7px;
   left: 190px;
   width: 15px;
   height: 15px;
   background-color: $white;
   border: 2px solid $pink;
   border-radius: 50%;
+
+  &:active {
+    background-color: $pink;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -58,5 +62,19 @@
 
   .range__bar {
     width: 202px;
+  }
+
+  .range__toggle {
+    &--top {
+      left: 148px;
+    }
+
+    &--middle {
+      left: 29px;
+    }
+
+    &--bottom {
+      left: 100px;
+    }
   }
 }

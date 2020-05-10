@@ -4,7 +4,6 @@
 }
 
 @mixin list-reset {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -16,4 +15,25 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+@mixin input-interaction($el: "&") {
+  &:hover {
+    #{$el} {
+      border: 2px solid $dark-blue;
+    }
+  }
+
+  &:active {
+    #{$el} {
+      border: 2px solid $pink;
+    }
+  }
+
+  &:focus {
+    #{$el} {
+      border: 2px solid $pink;
+      outline: none;
+    }
+  }
 }
