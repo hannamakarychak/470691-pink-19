@@ -8,3 +8,12 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin button-base {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

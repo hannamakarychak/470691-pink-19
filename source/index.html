@@ -12,11 +12,17 @@
   <header class="header  header--menu-closed header--menu-nojs">
     <div class="header__container container container--desktop">
       <div class="header__top">
-        <picture class="header__picture">
-          <source media="(min-width: 960px)" srcset="../img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
-          <img src="../img/logo-pink-white-mobile.svg" class="header__logo logo">
-        </picture>
+        <a href="#" class="header__link">
+          <svg class="header__logo logo logo--mobile" width="23.867px" height="23.867px">
+            <use xlink:href="../img/sprite.svg#logo-mobile"></use>
+          </svg>
+          <svg class="header__logo logo logo--tablet" width="146.3px" height="40.375px">
+            <use xlink:href="../img/sprite.svg#logo-tablet"></use>
+          </svg>
+          <svg class="header__logo logo logo--desktop" width="146.3px" height="40.375px">
+            <use xlink:href="../img/sprite.svg#logo-desktop"></use>
+          </svg>
+        </a>
         <button class="header__burger-button button">
           <svg class="header__cross-icon" width="23.867px" height="23.867px">
             <use xlink:href="../img/sprite.svg#cross-icon"></use>
@@ -181,7 +187,7 @@
           <h2 class="post-preview__heading">
             Эффект на 24 часа!
           </h2>
-          <div class="post-preview__description">Британские ученые провели исследования <br>
+          <div class="post-preview__description">Британские ученые провели исследования
             и доказали, что положительный эффект
             от использования приложения длится
             целые сутки! <br>
@@ -192,7 +198,7 @@
     </section>
 
     <section class="review">
-      <div class="review__flex-container">
+      <div class="review__flex-container container">
         <p class="review__details">
           25 лет, водитель трамвая</p>
         <p class="review__heading">
@@ -202,6 +208,16 @@
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
           познакомился со своей будущей женой в комментариях к выложенной фотографии!»
         </p>
+        <button type="button" class="review__slider-button slider-button review__slider-button--left">
+          <svg class="review__icon icon-arrow" width="21.706px" height="41.719px">
+            <use xlink:href="../img/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button type="button" class="review__slider-button slider-button review__slider-button--right">
+          <svg class="review__icon icon-arrow" width="21.706px" height="41.719px">
+            <use xlink:href="../img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
       </div>
       <div class="review__buttons-wrapper slider-navi">
         <button type="button" class="slider-navi__button slider-navi__button--current"></button>
@@ -215,19 +231,19 @@
           <caption class="visually-hidden">Выбор фильтра</caption>
           <tbody>
             <tr class="offers__row">
-              <td class="offers__name offers__name--blank"></td>
-              <th class="offers__name" scope="col" colspan="2">
+              <td class="offers__name offers__name--blank offers__name--js offers__name--blank-js"></td>
+              <th class="offers__name offers__name--js" scope="col" colspan="2">
                 <div class="offers__name-text">
                   База
                   <span class="offers__price">1,99 USD</span></div>
               </th>
-              <th class="offers__name" scope="col" colspan="2">
+              <th class="offers__name offers__name--js" scope="col" colspan="2">
                 <div class="offers__name-text offers__name-text--hit">
                   Стандарт <br>
                   <span class="offers__price">3,99 USD</span>
                 </div>
               </th>
-              <th class="offers__name" scope="col" colspan="2">
+              <th class="offers__name offers__name--js" scope="col" colspan="2">
                 <div class="offers__name-text">
                   Анлим
                   <span class="offers__price">9,99 USD</span>
@@ -362,16 +378,18 @@
     </section>
   </main>
   <footer class="footer footer--index container">
-    <div class="footer__logo-wrapper">
-      <picture>
-        <source media="(min-width: 960px)" srcset="../img/logo-pink-blue-desktop.svg">
-        <img src="../img/logo-pink-blue-mobile.svg" class="footer__logo logo">
-      </picture>
-    </div>
+    <a href="#" class="footer__logo-link">
+      <svg class="footer__logo footer__logo--mobile" width="146.3px" height="40.375px">
+        <use xlink:href="../img/sprite.svg#footer-logo-mobile"></use>
+      </svg>
+      <svg class="footer__logo footer__logo--desktop" width="146.3px" height="40.375px">
+        <use xlink:href="../img/sprite.svg#footer-logo-desktop"></use>
+      </svg>
+    </a>
     <ul class="footer__socials socials-list">
       <li class="socials-list__item">
         <a href="#" class="socials-list__link" aria-label="twitter">
-          <svg lass="socials-list__icon" width="17.5px" height="14.663px">
+          <svg class="socials-list__icon" width="17.5px" height="14.663px">
             <use xlink:href="../img/sprite.svg#twitter"></use>
           </svg>
         </a>

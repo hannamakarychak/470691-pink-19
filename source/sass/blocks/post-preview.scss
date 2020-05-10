@@ -44,8 +44,9 @@
 
   .post-preview__text {
     flex-basis: 47%;
+    min-width: 50%;
     text-align: left;
-    margin-left: 70px;
+    margin-left: 68px;
     line-height: 24px;
   }
 
@@ -58,8 +59,27 @@
 }
 
 @media (min-width: $desktop) {
+  .post-preview {
+    justify-content: center;
+    padding: 27px 20px 67px 20px;
+  }
+
   .post-preview-bg {
     background-color: $whitish;
+  }
+
+  .post-preview__clock {
+    padding: 69px 14px 15px 23px;
+    width: 298px;
+    height: 345px;
+  }
+
+  .post-preview__clock-text {
+    font-size: 120px;
+    width: 253px;
+    height: 253px;
+    padding-top: 85px;
+    border: 17px solid $pink;
   }
 
   .post-preview__icon {
@@ -68,16 +88,21 @@
   }
 
   .post-preview__text {
+    min-width: 54.5%;
     margin-left: 67px;
     line-height: 30px;
   }
 
   .post-preview__heading {
     max-width: 100%;
-    margin: 55px 0 20px 0;
+    margin: 90px 0 20px 0;
   }
 
   .post-preview__description {
     font-size: 18px;
+  }
+
+  .post-preview__link {
+    margin-top: 25px;
   }
 }

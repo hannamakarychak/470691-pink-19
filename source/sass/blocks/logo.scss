@@ -1,16 +1,43 @@
 .logo {
-  fill: $white;
+  color: $white;
 
   &:hover {
-    fill: $pink;
+    color: $pink;
   }
 
   &:active {
-    fill: currentColor;
     opacity: 0.3;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
   }
 }
 
-.logo__glasses {
-  display: none;
+@media (min-width: $tablet) {
+  .logo {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .logo {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

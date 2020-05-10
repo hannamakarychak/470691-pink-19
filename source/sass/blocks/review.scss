@@ -20,6 +20,10 @@
   margin: 0 0 37px 0;
 }
 
+.review__icon {
+  display: none;
+}
+
 .review__buttons-wrapper {
   display: flex;
   justify-content: center;
@@ -48,10 +52,23 @@
     padding: 0 19px;
     font-size: 18px;
     line-height: 30px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: $desktop) {
+  .review {
+    padding: 190px 20px 5px 20px;
+    background-image: url("../../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 79px 63px;
+    background-position: 50% 20%;
+  }
+
+  .review__flex-container {
+    position: relative;
+  }
+
   .review__details {
     font-size: 18px;
     line-height: 30px;
@@ -62,7 +79,25 @@
   }
 
   .review__description {
+    padding: 0;
     max-width: 705px;
+  }
+
+  .review__slider-button {
+    position: absolute;
+    top: 20px;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+
+  .review__icon {
+    display: block;
   }
 
   .review__buttons-wrapper {

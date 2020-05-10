@@ -8,7 +8,7 @@
 .offers__table {
   text-align: center;
   text-transform: uppercase;
-  line-height: 30px;
+  // line-height: 30px;
   width: 100%;
   margin-bottom: 43px;
   border-collapse: collapse;
@@ -46,9 +46,9 @@
       width: 74px;
       height: 73px;
       top: 4px;
-      left: 25px;
-      font-size: 15px;
-
+      left: 22px;
+      font-size: 14px;
+      font-weight: 400;
       text-transform: uppercase;
       transform: translate(-18px, 0) rotate(-45deg);
       z-index: 1;
@@ -62,6 +62,7 @@
       top: 0;
       left: 0;
       background-image: url("../../img/bg-hit.svg");
+      background-size: 100% 100%;
     }
   }
 }
@@ -73,8 +74,11 @@
 .offers__cell {
   text-align: left;
   font-weight: 400;
-  padding: 22px;
+  padding: 19px 22px;
   color: $dark-blue;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
 
   &--left {
     border-left: 2px solid $greyish;
@@ -85,6 +89,7 @@
     border-right: 2px solid $greyish;
     margin-right: 20px;
     text-align: center;
+    justify-content: center;
   }
 }
 
@@ -103,7 +108,7 @@
 .offers__filter-feature {
   padding: 0;
 
-  &:not(:first-of-type) {
+  &:not(:nth-of-type(2)) {
     display: none;
   }
 }
@@ -127,7 +132,7 @@
     display: table-cell;
     width: 24%;
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 20px;
 
     &:not(:nth-child(3)) {
       display: table-cell;
@@ -147,7 +152,21 @@
   .offers__name-text {
     border: none;
     margin: 0;
-    padding: 8px 0;
+    padding: 19px 0 12px;
+
+    &--hit {
+      &::before {
+        width: 61px;
+        height: 61px;
+        top: 6px;
+        left: 24px;
+      }
+
+      &::after {
+        width: 61px;
+        height: 61px;
+      }
+    }
   }
 
   .offers__filter-name {
@@ -157,16 +176,13 @@
   .offers__filter-feature {
     border: 2px solid $greyish;
 
-    &:not(:first-of-type) {
+    &:not(:nth-of-type(2)) {
       display: table-cell;
     }
   }
 
   .offers__cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 7px 15px;
+    padding: 12px 15px;
     text-transform: capitalize;
     border: 2px solid $greyish;
 
@@ -185,7 +201,8 @@
   .offers__price {
     display: block;
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 20px;
+    margin-top: 6px;
   }
 
   .offers__buttons-wrapper {
@@ -195,7 +212,7 @@
 
 @media (min-width: $desktop) {
   .offers__cell {
-    min-height: 59px;
+    padding: 19px 15px;
 
     &--left {
       font-size: 18px;

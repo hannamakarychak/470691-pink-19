@@ -1,14 +1,9 @@
 .button {
-  display: inline-block;
-  background-color: transparent;
+  @include button-base;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
   color: $white;
-  border: none;
-  cursor: pointer;
 
   &--primary {
     padding: 14px 20px;
