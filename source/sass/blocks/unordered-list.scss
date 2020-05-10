@@ -7,10 +7,6 @@
 
 .unordered-list__item {
   margin-bottom: 38px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .unordered-list__column-image {
@@ -30,7 +26,7 @@
 
 @media (min-width: $tablet) {
   .unordered-list__item {
-    margin-bottom: 46px;
+    margin-bottom: 40px;
   }
 }
 
@@ -45,9 +41,11 @@
   }
 
   .unordered-list__column-image {
+    position: relative;
     display: block;
     width: 100%;
     height: auto;
+    z-index: 1;
   }
 
   .unordered-list__heading {
