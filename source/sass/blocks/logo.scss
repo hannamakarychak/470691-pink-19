@@ -1,5 +1,43 @@
 .logo {
-  display: block;
-  width: 75px;
-  height: 22px;
+  color: $white;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .logo {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .logo {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

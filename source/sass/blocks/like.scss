@@ -9,8 +9,9 @@
 }
 
 .like__icon {
-  margin: 0 19px;
+  margin: 0 17px 0 0;
   fill: $pink;
+  overflow: hidden;
 }
 
 .like__text {
@@ -21,6 +22,7 @@
 
 @media (min-width: $tablet) {
   .like {
+    flex-direction: row-reverse;
     margin-top: auto;
 
     &--mobile {
@@ -33,12 +35,13 @@
     }
 
     .like__text {
-      order: 1;
       margin-right: auto;
     }
   }
 
   .like__icon {
-    order: 2;
+    &--primary {
+      margin: 0 17px 0 17px;
+    }
   }
 }

@@ -4,7 +4,47 @@
 }
 
 @mixin list-reset {
-  margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin button-base {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin input-interaction($el: "&") {
+  &:hover {
+    #{$el} {
+      border: 2px solid $dark-blue;
+    }
+  }
+
+  &:active {
+    #{$el} {
+      border: 2px solid $pink;
+    }
+  }
+
+  &:focus {
+    #{$el} {
+      border: 2px solid $pink;
+      outline: none;
+    }
+  }
+}
+
+@mixin pink-link {
+  &:hover {
+    color: $dark-blue;
+    border-bottom: 1px solid $dark-blue;
+  }
+
+  &:active {
+    color: $dark-blue-30;
+  }
 }

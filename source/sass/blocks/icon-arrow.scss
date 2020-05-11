@@ -1,0 +1,11 @@
+.icon-arrow {
+  fill: $dark-blue-30;
+
+  &:hover {
+    fill: $dark-blue-60;
+  }
+
+  &:active {
+    fill: $dark-blue-10;
+  }
+}

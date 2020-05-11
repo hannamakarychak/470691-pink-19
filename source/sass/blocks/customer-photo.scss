@@ -4,10 +4,14 @@
 
 .customer-photo__item {
   margin-bottom: 20px;
+
+  &--half-width {
+    padding: 0 10px;
+  }
 }
 
 .customer-photo__half-width {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .customer-photo__description {
@@ -32,22 +36,23 @@
 
   .customer-photo__item {
     &--half-width {
-      padding: 0 10px;
-      flex-basis: 50%;
+      flex: 0 1 50%;
+      max-width: 50%;
     }
   }
 }
 
 @media (min-width: $desktop) {
   .customer-photo__description {
-    padding: 18px 0;
+    margin: 95px auto 86px;
   }
 
   .customer-photo__item {
     margin-bottom: 50px;
 
     &--half-width {
-      flex-basis: 33.3333%;
+      flex: 0 1 33.33%;
+      max-width: 33.33%;
       margin-bottom: 54px;
     }
   }

@@ -15,6 +15,15 @@
   margin-bottom: 1px;
 }
 
+.header__link {
+  height: 22px;
+}
+
+.header__logo {
+  height: 22px;
+  width: 75px;
+}
+
 .header--menu-closed .header__burger-icon {
   display: block;
   width: 50px;
@@ -61,6 +70,8 @@
 
 .header--menu-opened .header__cross-icon {
   display: block;
+  width: 23.867px;
+  height: 23.867px;
 }
 
 .header--menu-opened .header__burger-icon {
@@ -90,6 +101,11 @@
 
   .header__top {
     min-height: 109px;
+  }
+
+  .header__logo {
+    height: 40px;
+    width: 147px;
   }
 }
 

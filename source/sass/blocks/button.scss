@@ -1,14 +1,9 @@
 .button {
-  display: inline-block;
-  background-color: transparent;
+  @include button-base;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
   color: $white;
-  border: none;
-  cursor: pointer;
 
   &--primary {
     padding: 14px 20px;
@@ -30,20 +25,61 @@
     padding: 14px 20px;
     border: solid 3px $pink;
     border-radius: 40px;
+
+    &:hover {
+      color: $white;
+      background-color: $pink;
+    }
+
+    &:active {
+      color: $white-30;
+      background-color: $pink;
+    }
   }
 
-  &--tertiary {
-    color: $dark-blue;
+  &--cancel {
+    color: $dark-blue-10;
     padding: 14px 20px;
-    border: solid 3px $dark-blue;
+    border: solid 3px $dark-blue-10;
     border-radius: 40px;
-    opacity: 0.1;
+
+    &:hover {
+      color: $dark-blue-30;
+      border: 3px solid $dark-blue-30;
+    }
+
+    &:active {
+      color: $white-30;
+      background-color: $dark-blue-30;
+      border: $dark-blue-30;
+    }
+
+    &:disabled {
+      background-color: $greyish;
+    }
+  }
+
+  &--accent {
+    padding: 20px 10px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $green;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: $dark-green;
+    }
+
+    &:active {
+      background-color: $dark-green;
+      color: $white-30;
+    }
   }
 }
 
 @media (min-width: $tablet) {
   .button {
-    padding: 14px 47px;
+    padding: 14px 40px;
   }
 }
 

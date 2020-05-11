@@ -4,25 +4,26 @@
 
 .photo-settings__bg-color {
   padding: 20px 0 40px 0;
-  background-color: pink;
+  background-color: $whitish;
 }
 
 .photo-settings__flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
-.photo-settings__wrapper {
+.photo-settings__form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-top: 42px;
 }
 
 .photo-settings__range {
-  margin: 0 auto;
   padding: 35px 0;
-  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
 }
 
 .photo-settings__icon {
@@ -33,6 +34,17 @@
     fill: $pink;
     opacity: 1;
   }
+
+  &:hover {
+    fill: $pink;
+    color: $pink;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $dark-blue-50;
+    color: $dark-blue-50;
+  }
 }
 
 .photo-settings__button-wrapper {
@@ -40,7 +52,7 @@
 }
 
 .photo-settings__button {
-  width: 100%;
+  min-width: 280px;
 
   &:not(:last-child) {
     margin-bottom: 12px;
@@ -57,34 +69,62 @@
   }
 
   .photo-settings__flex-container {
+    max-width: 660px;
     justify-content: flex-start;
     flex-wrap: nowrap;
   }
 
-  .photo-settings__wrapper {
-    flex-basis: 40%;
-    flex-direction: column;
+  .photo-settings__form {
+    max-width: 357px;
+    justify-content: flex-start;
+    flex-basis: 50%;
+    // align-items: center;
     padding: 0 33px 0 48px;
   }
 
   .photo-settings__row {
     display: flex;
+    flex: 0 0 264px;
     align-items: center;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  .photo-settings__image {
+    width: 300px;
+    height: auto;
   }
 
   .photo-settings__icon {
     width: 22px;
     height: 22px;
     margin: 0 30px 0 0;
+    fill: $pink;
+    color: $pink;
+    opacity: 1;
+
+    // &--contrast {
+    //   width: 20px;
+    //   height: 20px;
+    // }
   }
 
   .photo-settings__range {
+    margin: 0 auto;
     border: none;
+    padding: 30px 0;
+  }
+
+  .photo-settings__button-wrapper {
+    padding: 0;
+    margin-top: 56px;
   }
 
   .photo-settings__button {
     min-width: 260px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -97,12 +137,7 @@
     justify-content: center;
   }
 
-  .photo-settings__image {
-    width: 300px;
-    height: 400px;
-  }
-
-  .photo-settings__wrapper {
+  .photo-settings__form {
     padding: 0 0 0 90px;
   }
 
@@ -112,6 +147,7 @@
 
   .photo-settings__row {
     padding: 12px;
+    flex: 0 0 410px;
 
     &:first-child {
       padding-top: 0;
@@ -121,6 +157,7 @@
   .photo-settings__icon {
     width: 44px;
     height: 44px;
+    margin-right: 54px;
   }
 
   .photo-settings__range {
@@ -130,11 +167,12 @@
   .photo-settings__button-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
+    margin-top: 146px;
   }
 
   .photo-settings__button {
     min-width: 183px;
+    padding: 11px 28px;
 
     &:not(:last-child) {
       margin-bottom: 0;

@@ -2,6 +2,20 @@
   &--hidden {
     display: none;
   }
+
+  &--tablet-hidden {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 320px;
+      left: -49px;
+      bottom: -1px;
+      height: 1px;
+      background-color: rgba(40, 54, 69, 0.1);
+    }
+  }
 }
 
 .range__controls {
@@ -11,20 +25,24 @@
 .range__bar {
   width: 240px;
   height: 2px;
-  background-color: $black;
+  background-color: $dark-blue;
   margin: 0 auto;
 }
 
 .range__toggle {
   position: absolute;
   content: "";
-  top: -5px;
+  top: -7px;
   left: 190px;
   width: 15px;
   height: 15px;
   background-color: $white;
   border: 2px solid $pink;
   border-radius: 50%;
+
+  &:active {
+    background-color: $pink;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -35,10 +53,34 @@
 
     &--tablet-hidden {
       display: none;
+
+      &::after {
+        display: none;
+      }
     }
   }
 
   .range__bar {
     width: 202px;
+  }
+
+  .range__toggle {
+    &--top {
+      left: 148px;
+    }
+
+    &--middle {
+      left: 29px;
+    }
+
+    &--bottom {
+      left: 100px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .range__bar {
+    width: 288px;
   }
 }
