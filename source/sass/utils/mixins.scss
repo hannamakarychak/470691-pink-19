@@ -37,3 +37,14 @@
     }
   }
 }
+
+@mixin pink-link {
+  &:hover {
+    color: $dark-blue;
+    border-bottom: 1px solid $dark-blue;
+  }
+
+  &:active {
+    color: $dark-blue-30;
+  }
+}

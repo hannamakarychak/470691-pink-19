@@ -78,3 +78,9 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .range__bar {
+    width: 288px;
+  }
+}

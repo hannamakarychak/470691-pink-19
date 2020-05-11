@@ -160,6 +160,7 @@
   .form__button {
     flex-basis: 296px;
     margin: 0;
+    padding: 19px 28px;
   }
 
   .form__submit-wrapper {
@@ -177,8 +178,19 @@
     flex-wrap: wrap;
   }
 
+  .form__fieldset {
+    &--border-visible {
+      margin-top: 20px;
+    }
+
+    &--no-margin {
+      margin-top: 0;
+    }
+  }
+
   .form__personal-data {
     flex-basis: 50%;
+    // flex: 0 1 41%;
   }
 
   .form__app {
@@ -195,7 +207,7 @@
   }
 
   .form__input-wrapper {
-    align-items: stretch;
+    // align-items: stretch;
 
     &--column {
       width: 100%;
@@ -212,6 +224,7 @@
 
   .form__input-contacts-wrapper {
     position: relative;
+    width: 100%;
 
     &--tel {
       position: relative;
@@ -246,10 +259,12 @@
         background-position: 50% 50%;
       }
     }
+  }
 
-    // &:hover {
-    //   border: 2px solid red;
-    // }
+  .form__legend {
+    &--textarea {
+      padding: 40px 20px;
+    }
   }
 
   .form__textarea {

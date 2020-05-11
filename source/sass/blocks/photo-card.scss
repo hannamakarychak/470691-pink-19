@@ -1,3 +1,28 @@
+.photo-card__link {
+  display: block;
+
+  &--main {
+    position: relative;
+
+    &::before {
+      display: block;
+      position: absolute;
+      padding: 7px 10px 10px 10px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
+      content: "панорама дня";
+      top: 0;
+      right: 20px;
+      width: 140px;
+      height: 36px;
+      color: white;
+      background-color: $pink;
+    }
+  }
+}
+
 .photo-card__image {
   display: block;
   width: 100%;
@@ -38,10 +63,18 @@
     padding: 20px 10px 22px 27px;
   }
 
+  .photo-card__link {
+    &--main {
+      &::before {
+        top: 57px;
+      }
+    }
+  }
+
   .photo-card__image {
     &--main {
       width: 100%;
-      height: auto;
+      height: 509px;
     }
   }
 }
@@ -50,6 +83,15 @@
   .photo-card__info-wrapper {
     &--full-width {
       min-height: 96px;
+    }
+  }
+
+  .photo-card__link {
+    &--main {
+      &::before {
+        top: 54px;
+        right: 130px;
+      }
     }
   }
 }

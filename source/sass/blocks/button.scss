@@ -25,14 +25,38 @@
     padding: 14px 20px;
     border: solid 3px $pink;
     border-radius: 40px;
+
+    &:hover {
+      color: $white;
+      background-color: $pink;
+    }
+
+    &:active {
+      color: $white-30;
+      background-color: $pink;
+    }
   }
 
-  &--tertiary {
-    color: $dark-blue;
+  &--cancel {
+    color: $dark-blue-10;
     padding: 14px 20px;
-    border: solid 3px $dark-blue;
+    border: solid 3px $dark-blue-10;
     border-radius: 40px;
-    opacity: 0.1;
+
+    &:hover {
+      color: $dark-blue-30;
+      border: 3px solid $dark-blue-30;
+    }
+
+    &:active {
+      color: $white-30;
+      background-color: $dark-blue-30;
+      border: $dark-blue-30;
+    }
+
+    &:disabled {
+      background-color: $greyish;
+    }
   }
 
   &--accent {
@@ -41,6 +65,15 @@
     color: $white;
     background-color: $green;
     border-radius: 3px;
+
+    &:hover {
+      background-color: $dark-green;
+    }
+
+    &:active {
+      background-color: $dark-green;
+      color: $white-30;
+    }
   }
 }
 

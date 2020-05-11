@@ -52,7 +52,7 @@
 }
 
 .photo-settings__button {
-  width: 100%;
+  min-width: 280px;
 
   &:not(:last-child) {
     margin-bottom: 12px;
@@ -84,8 +84,14 @@
 
   .photo-settings__row {
     display: flex;
+    flex: 0 0 264px;
     align-items: center;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  .photo-settings__image {
+    width: 300px;
+    height: auto;
   }
 
   .photo-settings__icon {
@@ -105,10 +111,20 @@
   .photo-settings__range {
     margin: 0 auto;
     border: none;
+    padding: 30px 0;
+  }
+
+  .photo-settings__button-wrapper {
+    padding: 0;
+    margin-top: 56px;
   }
 
   .photo-settings__button {
     min-width: 260px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -121,11 +137,6 @@
     justify-content: center;
   }
 
-  .photo-settings__image {
-    width: 300px;
-    height: auto;
-  }
-
   .photo-settings__form {
     padding: 0 0 0 90px;
   }
@@ -136,6 +147,7 @@
 
   .photo-settings__row {
     padding: 12px;
+    flex: 0 0 410px;
 
     &:first-child {
       padding-top: 0;
@@ -145,6 +157,7 @@
   .photo-settings__icon {
     width: 44px;
     height: 44px;
+    margin-right: 54px;
   }
 
   .photo-settings__range {
@@ -154,11 +167,12 @@
   .photo-settings__button-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
+    margin-top: 146px;
   }
 
   .photo-settings__button {
     min-width: 183px;
+    padding: 11px 28px;
 
     &:not(:last-child) {
       margin-bottom: 0;
