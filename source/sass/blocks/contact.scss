@@ -28,6 +28,7 @@
 }
 
 .contact__map {
+  width: 100%;
   height: 240px;
   position: relative;
 
@@ -55,6 +56,11 @@
     background-image: url("../../img/icon-map-marker.svg");
     z-index: 1;
   }
+}
+
+.contact__map-embed {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: $tablet) {

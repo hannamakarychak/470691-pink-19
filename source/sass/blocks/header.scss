@@ -121,9 +121,15 @@
   }
 
   .header .header__top {
+    align-items: stretch;
     background-color: transparent;
     box-shadow: none;
     margin-bottom: 0;
+    padding: 28px 20px;
+  }
+
+  .header__link {
+    height: 40px;
   }
 
   .header__burger-button {
