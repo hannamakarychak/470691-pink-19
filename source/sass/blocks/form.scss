@@ -115,6 +115,7 @@
 
     &--column {
       flex-direction: column-reverse;
+      align-items: flex-start;
       padding: 0 60px;
       margin-bottom: 35px;
     }
@@ -190,11 +191,12 @@
 
   .form__personal-data {
     flex-basis: 50%;
-    // flex: 0 1 41%;
+    max-width: 470px;
   }
 
   .form__app {
     flex-basis: 50%;
+    max-width: 470px;
   }
 
   .form__app .form__legend {
@@ -254,7 +256,7 @@
         width: 56px;
         height: 55px;
         background-color: $greyish;
-        background-image: url("../../img/icon-mail.svg");
+        background-image: url("../../img/icon-phone.svg");
         background-repeat: no-repeat;
         background-position: 50% 50%;
       }

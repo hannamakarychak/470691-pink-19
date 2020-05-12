@@ -4,38 +4,42 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="header  header--menu-closed header--menu-nojs">
     <div class="header__container container container--desktop">
       <div class="header__top">
         <a href="index.html" class="header__link">
           <svg class="header__logo logo logo--mobile" width="23.867px" height="23.867px">
-            <use xlink:href="../img/sprite.svg#logo-mobile"></use>
+            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
           </svg>
           <svg class="header__logo logo logo--tablet" width="146.3px" height="40.375px">
-            <use xlink:href="../img/sprite.svg#logo-tablet"></use>
+            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
           </svg>
           <svg class="header__logo logo logo--desktop" width="146.3px" height="40.375px">
-            <use xlink:href="../img/sprite.svg#logo-desktop"></use>
+            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
           </svg>
         </a>
         <button class="header__burger-button button">
           <svg class="header__cross-icon" width="23.867px" height="23.867px">
-            <use xlink:href="../img/sprite.svg#cross-icon"></use>
+            <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
           </svg>
           <svg class="header__burger-icon" width="49.945px" height="24.007px">
-            <use xlink:href="../img/sprite.svg#burger-icon"></use>
+            <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
           </svg>
         </button>
       </div>
       <nav class="header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="index.html" class="navigation__link">Главная</a>
+            <a href="#" class="navigation__link">Главная</a>
           </li>
           <li class="navigation__item">
             <a href="photo.html" class="navigation__link">Фотографии</a>
@@ -74,15 +78,18 @@
             <legend class="visually-hidden">Личные Данные</legend>
             <div class="form__input-wrapper">
               <label for="last-name" class="form__label">Фамилия:</label>
-              <input type="text" name="last-name" id="last-name" class="form__text-input" placeholder="Укажите фамилию &#42;" required="">
+              <input type="text" name="last-name" id="last-name" class="form__text-input"
+                placeholder="Укажите фамилию &#42;" required="">
             </div>
             <div class="form__input-wrapper">
               <label for="name" class="form__label">Имя:</label>
-              <input type="text" name="name" id="name" class="form__text-input" placeholder="Введите ваше имя &#42;" required="">
+              <input type="text" name="name" id="name" class="form__text-input" placeholder="Введите ваше имя &#42;"
+                required="">
             </div>
             <div class="form__input-wrapper">
               <label for="father-name" class="form__label">Отчество:</label>
-              <input type="text" name="father-name" id="father-name" class="form__text-input" placeholder="Ну и отчество тоже">
+              <input type="text" name="father-name" id="father-name" class="form__text-input"
+                placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
         </div>
@@ -91,27 +98,33 @@
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="form__checkbox-list checkbox-list unordered-list">
               <li class="checkbox-list__item">
-                <input type="checkbox" name="shark" value="shark" id="shark" class="checkbox-list__input visually-hidden" checked="">
+                <input type="checkbox" name="shark" value="shark" id="shark"
+                  class="checkbox-list__input visually-hidden" checked="">
                 <label for="shark" class="checkbox-list__label">Сделал селфи с акулой</label>
               </li>
               <li class="checkbox-list__item">
-                <input type="checkbox" name="sunburn" value="sunburn" id="sunburn" class="checkbox-list__input visually-hidden" checked="">
+                <input type="checkbox" name="sunburn" value="sunburn" id="sunburn"
+                  class="checkbox-list__input visually-hidden" checked="">
                 <label for="sunburn" class="checkbox-list__label">Обгорел на пляже</label>
               </li>
               <li class="checkbox-list__item">
-                <input type="checkbox" name="chuck-norris" value="chuck-norris" id="chuck-norris" class="checkbox-list__input visually-hidden">
+                <input type="checkbox" name="chuck-norris" value="chuck-norris" id="chuck-norris"
+                  class="checkbox-list__input visually-hidden">
                 <label for="chuck-norris" class="checkbox-list__label">Видел Чака Норриса</label>
               </li>
               <li class="checkbox-list__item">
-                <input type="checkbox" name="souvenirs" value="souvenirs" id="souvenirs" class="checkbox-list__input visually-hidden">
+                <input type="checkbox" name="souvenirs" value="souvenirs" id="souvenirs"
+                  class="checkbox-list__input visually-hidden">
                 <label for="souvenirs" class="checkbox-list__label">Накупил сувениров</label>
               </li>
               <li class="checkbox-list__item">
-                <input type="checkbox" name="tower" value="tower" id="tower" class="checkbox-list__input visually-hidden" checked="">
+                <input type="checkbox" name="tower" value="tower" id="tower"
+                  class="checkbox-list__input visually-hidden" checked="">
                 <label for="tower" class="checkbox-list__label">Удержал башню</label>
               </li>
               <li class="checkbox-list__item">
-                <input type="checkbox" name="hotel" value="hotel" id="hotel" class="checkbox-list__input visually-hidden">
+                <input type="checkbox" name="hotel" value="hotel" id="hotel"
+                  class="checkbox-list__input visually-hidden">
                 <label for="hotel" class="checkbox-list__label">Разгромил отель</label>
               </li>
             </ul>
@@ -125,13 +138,15 @@
               <div class="form__input-wrapper form__input-wrapper--column">
                 <label for="mobile-number" class="form__label form__label--top">Номер телефона</label>
                 <div class="form__input-contacts-wrapper form__input-contacts-wrapper--tel">
-                  <input type="tel" name="mobile-number" id="mobile-number" class="form__text-input" placeholder="Номер, пожалуйста" pattern="(\+?\d[- .]*){7,13}">
+                  <input type="tel" name="mobile-number" id="mobile-number" class="form__text-input"
+                    placeholder="Номер, пожалуйста" pattern="(\+?\d[- .]*){7,13}">
                 </div>
               </div>
               <div class="form__input-wrapper form__input-wrapper--column">
                 <label for="email" class="form__label">адрес почты</label>
                 <div class="form__input-contacts-wrapper form__input-contacts-wrapper--mail">
-                  <input type="email" name="email" id="email" class="form__text-input" placeholder="Введите почту &#42;" required="">
+                  <input type="email" name="email" id="email" class="form__text-input" placeholder="Введите почту &#42;"
+                    required="">
                 </div>
               </div>
             </div>
@@ -142,7 +157,8 @@
             <legend class="form__legend">С каким приложением путешествовали?</legend>
             <ul class="form__radio-list radio-list unordered-list">
               <li class="radio-list__item">
-                <input type="radio" name="app" value="ios" id="ios" class="radio-list__input visually-hidden" checked="">
+                <input type="radio" name="app" value="ios" id="ios" class="radio-list__input visually-hidden"
+                  checked="">
                 <label for="ios" class="radio-list__label">Pink для iOS</label>
               </li>
               <li class="radio-list__item">
@@ -159,10 +175,12 @@
         <div class="form__comment container container--light-bg">
           <fieldset class="form__fieldset form__fieldset--border-visible">
             <legend class="form__legend form__legend--textarea">Опишите свои эмоции</legend>
-            <textarea name="comment" id="comment" cols="22" rows="5" class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea name="comment" id="comment" cols="22" rows="5" class="form__textarea"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="form__submit-wrapper">
-            <button type="submit" class="form__button button button--accent button--modal-open form__button--js">Отправить форму</button>
+            <button type="submit"
+              class="form__button button button--accent button--modal-open form__button--js">Отправить форму</button>
             <div class="form__text">
               <span class="form__accent">&#42;</span> — обязательные поля
             </div>
@@ -174,42 +192,42 @@
   <footer class="footer container">
     <a href="index.html" class="footer__logo-link">
       <svg class="footer__logo footer__logo--mobile" width="146.3px" height="40.375px">
-        <use xlink:href="../img/sprite.svg#footer-logo-mobile"></use>
+        <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
       </svg>
       <svg class="footer__logo footer__logo--desktop" width="146.3px" height="40.375px">
-        <use xlink:href="../img/sprite.svg#footer-logo-desktop"></use>
+        <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
       </svg>
     </a>
     <ul class="footer__socials socials-list">
       <li class="socials-list__item">
-        <a href="photo.html" class="socials-list__link" aria-label="twitter">
+        <a href="#" class="socials-list__link" aria-label="twitter">
           <svg class="socials-list__icon" width="17.5px" height="14.663px">
-            <use xlink:href="../img/sprite.svg#twitter"></use>
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
         </a>
       </li>
       <li class="socials-list__item">
         <a href="#" class="socials-list__link" aria-label="facebook">
           <svg class="socials-list__icon" width="8.673px" height="18.944px">
-            <use xlink:href="../img/sprite.svg#facebook"></use>
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="socials-list__item">
         <a href="#" class="socials-list__link" aria-label="youtube">
           <svg class="socials-list__icon" width="14.64px" height="13.96px">
-            <use xlink:href="../img/sprite.svg#youtube"></use>
+            <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
     </ul>
     <div class="footer__copy">
       <span class="footer__developer-info">Разработано</span>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copy-link" aria-label="HTML Academy Профессиональный HTML и CSS, уровень 2">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copy-link"
+        aria-label="HTML Academy Профессиональный HTML и CSS, уровень 2">
         <svg class="footer__copy-icon" width="26.943px" height="34.09px">
-          <use xlink:href="../img/sprite.svg#html-logo"></use>
+          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
-
       </a>
     </div>
   </footer>
