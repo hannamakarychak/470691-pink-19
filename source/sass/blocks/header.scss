@@ -103,6 +103,10 @@
     min-height: 109px;
   }
 
+  .header__link {
+    height: 55px;
+  }
+
   .header__logo {
     height: 40px;
     width: 147px;
@@ -126,10 +130,6 @@
     box-shadow: none;
     margin-bottom: 0;
     padding: 28px 20px;
-  }
-
-  .header__link {
-    height: 40px;
   }
 
   .header__burger-button {

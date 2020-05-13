@@ -2,7 +2,7 @@
   background-color: $dark-blue;
   color: $white;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 29px 20px;
 }
 
 .cta__list {
@@ -10,12 +10,12 @@
   justify-content: center;
   align-items: baseline;
   list-style: none;
-  margin: 0 0 28px 0;
+  margin: 0 0 17px 0;
   padding: 0;
 }
 
 .cta__link {
-  padding: 15px;
+  padding: 15px 18px;
 }
 
 .cta__icon {
@@ -29,14 +29,14 @@
 }
 
 .cta__text {
-  margin: 0 auto 153px;
+  margin: 0 auto;
   max-width: 300px;
 }
 
 .cta__button {
   width: 100%;
   max-width: 300px;
-  margin: 30px auto;
+  margin: 8px auto 37px auto;
 }
 
 @media (min-width: $tablet) {
@@ -46,7 +46,7 @@
   }
 
   .cta__button {
-    margin: 0 auto 45px auto;
+    margin: -5px auto 50px auto;
   }
 
   .cta__text {
@@ -57,7 +57,7 @@
   }
 
   .cta__list {
-    margin: 0 0 41px 0;
+    margin: 0 0 35px 0;
   }
 }
 
