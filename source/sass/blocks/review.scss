@@ -1,6 +1,6 @@
 .review {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 17px;
 }
 
 .review__details {
@@ -16,8 +16,8 @@
 .review__description {
   line-height: 30px;
   color: $dark-blue;
-  padding: 0 22px;
-  margin: 0 0 37px 0;
+  padding: 0;
+  margin: 0 0 7px 0;
 }
 
 .review__icon {
@@ -45,11 +45,11 @@
   .review__heading {
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 7px 0;
+    margin: 0 0 3px 0;
   }
 
   .review__description {
-    padding: 0 19px;
+    padding: 0;
     font-size: 18px;
     line-height: 30px;
     max-width: 100%;

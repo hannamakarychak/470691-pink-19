@@ -19,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 42px;
+  padding-top: 29px;
 }
 
 .photo-settings__range {
@@ -65,7 +65,7 @@
   }
 
   .photo-settings__description {
-    margin: 50px auto 70px auto;
+    margin: 0 auto 70px;
   }
 
   .photo-settings__flex-container {
@@ -78,8 +78,7 @@
     max-width: 357px;
     justify-content: flex-start;
     flex-basis: 50%;
-    // align-items: center;
-    padding: 0 33px 0 48px;
+    padding: 0 16px 0 48px;
   }
 
   .photo-settings__row {
@@ -101,11 +100,6 @@
     fill: $pink;
     color: $pink;
     opacity: 1;
-
-    // &--contrast {
-    //   width: 20px;
-    //   height: 20px;
-    // }
   }
 
   .photo-settings__range {
@@ -134,15 +128,17 @@
   }
 
   .photo-settings__flex-container {
+    max-width: 940px;
     justify-content: center;
   }
 
   .photo-settings__form {
+    max-width: 478px;
     padding: 0 0 0 90px;
   }
 
   .photo-settings__description {
-    margin: 10px auto 64px auto;
+    margin: 0 auto 64px auto;
   }
 
   .photo-settings__row {

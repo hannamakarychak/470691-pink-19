@@ -83,4 +83,18 @@
   .range__bar {
     width: 288px;
   }
+
+  .range__toggle {
+    &--top {
+      left: 61px;
+    }
+
+    &--middle {
+      left: 235px;
+    }
+
+    &--bottom {
+      left: 149px;
+    }
+  }
 }

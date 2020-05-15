@@ -3,7 +3,7 @@
 }
 
 .customer-photo__item {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   &--half-width {
     padding: 0 10px;
@@ -15,13 +15,14 @@
 }
 
 .customer-photo__description {
-  max-width: 500px;
-  margin: 50px auto 68px auto;
+  max-width: 90%;
+  margin: 50px auto 45px auto;
 }
 
 @media (min-width: $tablet) {
   .customer-photo__description {
-    margin: 100px auto 80px;
+    max-width: 500px;
+    margin: 90px auto 80px;
   }
 
   .customer-photo__full-width {
@@ -44,7 +45,8 @@
 
 @media (min-width: $desktop) {
   .customer-photo__description {
-    margin: 95px auto 86px;
+    margin: 89px auto 87px;
+    max-width: 676px;
   }
 
   .customer-photo__item {

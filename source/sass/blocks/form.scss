@@ -98,6 +98,8 @@
   }
 
   .form__legend {
+    padding: 56px 20px;
+
     &--hidden {
       display: block;
     }
@@ -124,6 +126,7 @@
   .form__label {
     &--top {
       padding-top: 0;
+      margin: 0 9px 7px;
     }
   }
 
@@ -155,7 +158,7 @@
   .form__textarea {
     width: 85%;
     height: 100%;
-    margin: 0 50px 53px 50px;
+    margin: -30px 50px 53px;
   }
 
   .form__button {
@@ -213,8 +216,6 @@
   }
 
   .form__input-wrapper {
-    // align-items: stretch;
-
     &--column {
       width: 100%;
 

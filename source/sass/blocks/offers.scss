@@ -1,14 +1,13 @@
 .offers {
-  padding-top: 95px;
-  padding-bottom: 45px;
+  padding-top: 117px;
+  padding-bottom: 40px;
   background-color: $whitish;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13%);
 }
 
 .offers__table {
   text-align: center;
   text-transform: uppercase;
-  // line-height: 30px;
   width: 100%;
   margin-bottom: 43px;
   border-collapse: collapse;
@@ -33,7 +32,7 @@
 
 .offers__name-text {
   margin: 0 20px;
-  padding: 18px 0;
+  padding: 24px 0;
   border-left: 2px $greyish solid;
   border-right: 2px $greyish solid;
 
@@ -211,11 +210,21 @@
 }
 
 @media (min-width: $desktop) {
+  .offers {
+    padding-top: 130px;
+    padding-bottom: 64px;
+  }
+
   .offers__cell {
     padding: 19px 15px;
 
     &--left {
       font-size: 18px;
     }
+  }
+
+  .offers__name-text {
+    font-size: 18px;
+    padding: 24px 0 24px;
   }
 }

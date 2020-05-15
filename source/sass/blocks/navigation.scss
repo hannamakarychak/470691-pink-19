@@ -52,9 +52,9 @@
   }
 
   .navigation__item {
-    margin: 0 0 0 82px;
+    margin: 0 -9px 0 83px;
     box-shadow: none;
-    min-height: unset;
+    min-height: auto;
 
     &:first-child {
       margin-left: 0;

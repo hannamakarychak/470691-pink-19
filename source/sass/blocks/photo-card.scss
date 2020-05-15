@@ -31,7 +31,8 @@
 
 .photo-card__description {
   margin: 0;
-  padding: 5px 0;
+  margin-bottom: 10px;
+  padding: 0;
 }
 
 .photo-card__name {
@@ -46,7 +47,7 @@
 
 .photo-card__info-wrapper {
   background-color: $whitish;
-  padding: 25px 18px;
+  padding: 16px 15px;
   margin: 0;
 }
 
@@ -59,8 +60,13 @@
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
-    min-height: 175px;
-    padding: 20px 10px 22px 27px;
+    min-height: 155px;
+    padding: 20px 10px 20px 25px;
+
+    &--full-width {
+      min-height: unset;
+      margin-bottom: 44px;
+    }
   }
 
   .photo-card__link {
@@ -83,6 +89,7 @@
   .photo-card__info-wrapper {
     &--full-width {
       min-height: 96px;
+      padding: 20px 2px 20px 25px;
     }
   }
 

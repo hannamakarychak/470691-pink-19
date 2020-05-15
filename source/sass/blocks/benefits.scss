@@ -6,7 +6,7 @@
 }
 
 .benefits__list {
-  padding-top: 95px;
+  padding-top: 85px;
 }
 
 .benefits__moto-wrapper {
@@ -28,7 +28,6 @@
 
 .benefits__list-wrapper {
   background-color: $whitish;
-  // clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 4%);
   position: relative;
 
   &::before {
@@ -40,7 +39,6 @@
     height: 94px;
     background-image: url("../../img/bg-triangle-white.svg");
     z-index: 1;
-    /* background-size: 100% 100%; */
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -63,16 +61,16 @@
 
 @media (min-width: $tablet) {
   .benefits {
-    padding-top: 59px;
+    padding-top: 44px;
   }
 
   .benefits__moto-wrapper {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 
   .benefits__moto {
     font-size: 40px;
-    line-height: 56px;
+    line-height: 50px;
   }
 
   .benefits__moto:not(:last-child) {
@@ -103,15 +101,23 @@
     width: 100%;
     height: auto;
   }
-
-  .benefits__list-wrapper {
-    &::before {
-      // background-position: 0 100%;
-    }
-  }
 }
 
 @media (min-width: $desktop) {
+  .benefits {
+    padding-top: 67px;
+  }
+
+  .benefits__moto-wrapper {
+    margin: 0 auto;
+    padding-bottom: 74px;
+  }
+
+  .benefits__moto {
+    font-size: 50px;
+    line-height: 62px;
+  }
+
   .benefits__list {
     display: flex;
     flex-basis: 100%;
